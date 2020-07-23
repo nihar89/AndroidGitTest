@@ -1,0 +1,181 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddDiscountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <Spinner
+            android:id="@+id/adf_spFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_spinner_back"
+            android:entries="@array/shop_discount_type"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <Spinner
+            android:id="@+id/adf_spSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_spinner_back"
+            android:entries="@array/shop_branch_type"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="@dimen/content_text_size" />
+
+        <Spinner
+            android:id="@+id/aof_spProductname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_spinner_back"
+            android:entries="@array/productname"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="@dimen/content_text_size"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/adf_etDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_edittext"
+            android:hint="@string/enter_discount"
+            android:inputType="datetime"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/content_text_size" />
+
+        <EditText
+            android:id="@+id/adf_etStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_edittext"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/discount_start_date"
+            android:inputType="datetime"
+            android:padding="10dp"
+            android:textSize="@dimen/content_text_size" />
+
+        <EditText
+            android:id="@+id/adf_etEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_edittext"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/discount_end_date"
+            android:inputType="datetime"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/content_text_size" />
+
+        <LinearLayout
+            android:id="@+id/fao_llNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/aof_tvNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:padding="4dp"
+                android:text="@string/notification"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_text_size" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/aof_swNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:checked="true" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/aof_etNotificationDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_edittext"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/notification_date_time"
+            android:inputType="datetime"
+            android:padding="10dp"
+            android:textSize="@dimen/content_text_size"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/aof_etNotificationDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_edittext"
+            android:gravity="top"
+            android:hint="@string/notification_message"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="3"
+            android:padding="10dp"
+            android:textSize="@dimen/content_text_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/adf_btnSubmit"
+            android:layout_width="128dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_round_shap_primery_color"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

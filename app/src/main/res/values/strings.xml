@@ -1,0 +1,1201 @@
+<resources>
+    <string name="app_name">Lavender business</string>
+    <string name="signin">Sign In</string>
+    <string name="skip">Skip</string>
+    <string name="back">Back</string>
+    <string name="new_account">New Account</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="password">Password</string>
+    <string name="email">Email Address</string>
+    <string name="customer_registration">Customer Registration</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="age">Age</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="phone_no">Phone Number</string>
+    <string name="have_an_account_sign_in">Have an Account? Sign In!</string>
+    <string name="complete_address">Complete Address</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_state">Select State</string>
+    <string name="district">District</string>
+    <string name="submit">Submit</string>
+    <string name="save_changes">Save Changes</string>
+
+    <string name="notification_update_package">Your user package changed</string>
+    <string name="track_order">Track your order</string>
+    <string name="logout">Logout</string>
+
+    <string name="customer">Customer</string>
+    <string name="shopping">Shopping</string>
+    <string name="delivery">Delivery</string>
+    <string name="shop">Shops</string>
+    <string name="shipment">Shipment</string>
+    <string name="shipping">Shipping</string>
+    <string name="delivery_map">Delivery</string>
+
+    <string name="welcome_msg">Welcome to Lavendar</string>
+    <string name="platform_selection">Please choose platform required</string>
+
+    //remained in arabic
+    <string name="otp_code">OTP Number</string>
+    <string name="resend_code">Resend code</string>
+    <!-- <string name="cancel">Cancel</string>&lt;!&ndash;remained in arabic &ndash;&gt;
+ -->
+    <string name="verify">Verify</string>
+    <string name="verify_otp">Verify OTP</string>
+
+
+    <string name="order_delivery">Delivery</string>
+    <string name="order_shiping">Shipping</string>
+
+    <string name="all_shop">All Shops</string>
+    <string name="my_order">My Order</string>
+    <string name="manage_discounts">Manage Discounts</string>
+    <string name="add_product">Add Product</string>
+    <string name="link_to_shop">Link To Shop</string>
+    <string name="my_profile">My Profile</string>
+    <string name="change_language">Change Language</string>
+    <string name="change_password">Change Password</string>
+    <string name="my_delivery">My Delivery</string>
+    <string name="category">CATEGORY</string>
+    <string name="category_small">Category</string>
+    <string name="my_whishlist">My Wishlist</string>
+    <string name="my_cart">My Cart</string>
+    <string name="my_shipment">My Shipment</string>
+    <string name="chat_list">Chat List</string>
+    <string name="my_wallet">My Wallet</string>
+
+    <string name="electronics">Electronics</string>
+    <string name="automotive">Automotive</string>
+    <string name="fashion">Fashion</string>
+    <string name="more">More</string>
+
+    <string name="shop_name">Shop Name</string>
+    <string name="shop_company_name">Shop Company Name</string>
+    <string name="shop_manager_name">Shop Manager Name</string>
+    <string name="shop_location_note">Shop Location Note</string>
+    <string name="shop_mobile_number">Shop Mobile Number</string>
+
+
+    <string name="select_offer_type">Select Offer Type</string>
+    <string name="select_shop">Select Shop/Branch</string>
+    <string name="offer_end_date">Offer End Date:</string>
+    <string name="offer_start_date">Offer Start Date</string>
+
+
+    <string name="specification">Specification</string>
+    <string name="discription">Description</string>
+    <string name="agent">Agent :</string>
+    <string name="selling_type">Selling Type</string>
+    <string name="weight">Weight:</string>
+    <string name="guarantee_In_year">Guarantee(In Year) :</string>
+    <string name="weight_max_limit">Add Max Weight QTY</string>
+    <string name="addon_max_limit">Add Max Addons QTY</string>
+    <string name="product_name">Product Name</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="brand">Brand:</string>
+    <string name="fixed_price">Fixed Price</string>
+    <string name="bid_min_amount">Bid Min. Amount</string>
+    <string name="quantity">Quantity</string>
+    <string name="barcode">Enter Barcode ID:</string>
+    <string name="productsellingtype">Product Selling Type:</string>
+    <string name="productcondition">Product Condition:</string>
+    <string name="color">Color</string>
+    <string name="expiry_date">Expiry Date :</string>
+    <string name="code">Code :</string>
+    <string name="bid_expiry_date">Bid Expiry Date</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="typeArr">
+        <item>Search type</item>
+    </string-array>
+    <string-array name="categoryArr">
+        <item>Select Category</item>
+    </string-array>
+
+    <string-array name="selectionArr">
+        <item>Select Categories</item>
+        <item>Delivery</item>
+        <item>Shops</item>
+        <item>Branch</item>
+<!--        <item>Shipping</item>-->
+    </string-array>
+
+    <string-array name="shopArr">
+        <item>Select Shop/Branch</item>
+    </string-array>
+
+    <string name="bid">Bid</string>
+
+    <string name="branch_list">Branch List</string>
+    <string name="branch_details">Branch Detail</string>
+    <string name="order_list">Order List</string>
+    <string name="order_detail">Order Detail</string>
+    <string name="add_offer">Add Offer</string>
+    <string name="add_discounts">Add Discounts</string>
+    <string name="my_bids">My Bids</string>
+    <string name="your_offer">Your Offer</string>
+    <string name="register_branch">REGISTER NEW BRANCH</string>
+    <string name="bid_detail">Bid Detail</string>
+    <string name="notification">Notification</string>
+    <string name="advance_search">Advance Search</string>
+    <string name="road_planner">Road Planner</string>
+
+    <string name="buy_one_get_another">BUY ONE GET ANOTHER OFFER</string>
+    <string name="conditional_offer">Conditional Discount</string>
+    <string name="conditional_offer_lable">Conditional Offer</string>
+    <string name="offer">Offers</string>
+    <!--<string name="map">Map</string>-->
+    <string name="qty1">Qty:</string>
+    <string name="cart">Shop</string>
+    <string name="my_account">My Account</string>
+    <string name="profile">Profile</string>
+    <string name="my_orders">My Orders</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="settings">Settings</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="your_cart_is_empty_n_there_are_no_items_in_your_cart">There are currently no items in \n your shopping cart.</string>
+    <string name="cart_is_empty">Go Shopping</string>
+    <string name="location">Location</string>
+    <string name="street_name">Street Name</string>
+    <string name="shop_information">Shop Information</string>
+    <string name="view_products">View Products</string>
+    <string name="start_chat">Start Chat</string>
+    <string name="product_detail">Product Detail</string>
+    <string name="bid_now">Bid now</string>
+    <string name="bid_now_detail">Bid now</string>
+    <string name="add_to_wishlist">Add to wishlist</string>
+    <string name="close">Close</string>
+    <string name="amount">Amount</string> <!--remained in arabic-->
+    <string name="place_order">Place Order</string>
+    <string name="update_bid">UPDATE BID</string>
+    <string name="cancel_cap">CANCEL</string><!--remained in arabic-->
+    <string name="enter_qty">Enter Qty</string>
+    <string name="home">Home</string>
+
+    //remained in arabic
+    <string name="pls_enter_otp">Please enter OTP</string>
+    <string name="enter_valid_otp">Enter valid OTP</string>
+
+    <string name="ok">OK</string>
+    <string name="pls_enter_valid_mobile">Please enter valid mobile number</string>
+    <string name="login_verify">Login Verify</string>
+    <string name="otp_has_been_sent_to_entered_number">OTP Has been sent to entered number.</string>
+    <string name="pls_enter_shop_owner_name">Please enter Shop owner name</string>
+    <string name="pls_enter_shop_owner_email">Please enter Shop owner email</string>
+    <string name="pls_enter_shop_owner_mobile">Please enter Shop owner mobile number</string>
+    <string name="pls_enter_shop_name">Please enter Shop name</string>
+    <string name="pls_enter_shop_company_name">Please enter Shop company name</string>
+
+
+    <string name="pls_enter_email">Please enter email</string>
+    <string name="pls_enter_password">Please enter password</string>
+    <string name="pls_enter_proper_password">Password length should be between 6 to 8</string>
+    <string name="pls_enter_proper_password_delivery">Password length should be between 6 to 15</string>
+    <string name="pls_enter_confirm_password">Please enter password</string>
+    <string name="pls_enter_shop_mobile">Please enter shop mobile number</string>
+    <string name="pls_enter_shop_phone">Please enter shop phone number</string>
+    <string name="pls_enter_shop_fax">Please enter shop fax</string>
+    <string name="pls_enter_valid_email">Please enter valid email</string>
+    <string name="password_not_match">Password and Confirm password not match</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="go_to_cart">Go To Cart</string>
+
+    <string name="input_key_phone_number">1234567890+-</string>
+    <string name="pls_enter_phone_number">Please enter phone number</string>
+    <string name="pls_enter_mobile_number">Please enter mobile number</string>
+    <string name="pls_enter_valid_mobile_number">Please enter valid mobile number</string>
+    <string name="pls_enter_id_number">Please enter id number</string>
+    <string name="pls_enter_company_name">Please enter company name</string>
+    <string name="pls_enter_name">Please enter name</string>
+    <string name="pls_enter_shop_manager_name">Please enter shop manager name</string>
+    <string name="i_agree_terms">I agree to the Terms of Service(Terms of Service)</string>
+    <string name="clear_all">Clear Wishlist</string>
+    <string name="product_category">Product Category :</string>
+    <string name="product_subcategory">Product Subcategory :</string>
+    <string name="product_child_category">Product Child Category :</string>
+    <string name="availability">Availability :</string>
+    <string name="view_more">View More</string>
+    <string name="view_less">View Less</string>
+    <string name="similar_items">Similar Items</string>
+    <string name="popular_items">Popular</string>
+    <string name="popular_items_new_text">Shopping</string>
+    <string name="popular_category">Popular Category</string>
+    <string name="popular_products">Popular Products</string>
+    <string name="pls_enter_start_date">Please enter start date</string>
+    <string name="pls_enter_end_date">Please enter end date</string>
+    <string name="pls_enter_city">Please enter city</string>
+    <string name="pls_enter_description">Please enter description</string>
+    <string name="pls_enter_terms">Please enter terms and condition</string>
+    <string name="pls_enter_specification">Please enter specification</string>
+    <string name="pls_enter_weight">Please enter weight</string>
+    <string name="pls_enter_selling_type">Please enter selling type</string>
+    <string name="pls_enter_agent">Please enter agent</string>
+    <string name="pls_enter_code">Please enter code</string>
+    <string name="pls_enter_expiry_date">Please enter expiry date</string>
+    <string name="pls_enter_product_size">Please enter product size</string>
+    <string name="pls_enter_color">Please enter color</string>
+    <string name="pls_enter_barcode">Please enter barcode</string>
+    <string name="pls_enter_quantity">Please enter quantity</string>
+    <string name="pls_enter_bid_min_amount">Please enter minimum bid amount</string>
+    <string name="pls_enter_fixed_price">Please enter fixed price</string>
+    <string name="pls_enter_brand_name">Please enter brand name</string>
+    <string name="pls_enter_product_name">Please enter product name</string>
+    <string name="pls_enter_location">Please enter location</string>
+    <string name="pls_enter_street">Please enter street</string>
+    <string name="pls_enter_state">Please enter state</string>
+    <string name="pls_enter_country">Please enter country</string>
+    <string name="pls_enter_address">Please enter address</string>
+    <string name="pls_enter_zipcode">Please enter zip code</string>
+    <string name="pls_enter_license_no">Please enter license no</string>
+    <string name="pls_enter_website">Please enter website</string>
+    <string name="pls_enter_registration_number">Please enter registration number</string>
+    <string name="pls_enter_model_number">Please enter model number</string>
+    <string name="pls_enter_plate_number">Please enter plate number</string>
+    <string name="name">Name : </string>
+    <string name="custname">Name : </string>
+    <string name="namelayout">Name</string>
+    <string name="delivery_term_conditions">Delivery Terms and Conditions</string>
+
+    <string name="car_type">Car Type</string>
+    <string name="car_color">Car Color</string>
+    <string name="plate_no">Car Plate No.</string>
+    <string name="model_no">Model No.</string>
+    <string name="licence_no">Licence No.</string>
+    <string name="register_no">Registration No.</string>
+    <string name="licence_expiry_no">Licence Expiry Date</string>
+    <string name="registation_expiry_no">Registration Exiry Date</string>
+    <string name="address">Address</string>
+    <string name="shopaddress">Shop Address</string>
+    <string name="customeraddress">Customer Address</string>
+    <string name="addressdescription">Address Description</string>
+    <string name="customermobile">Customer Mobile Number</string>
+    <string name="street">Street :</string>
+    <string name="zipcode">Zip Code :</string>
+    <!-- Yatin Strings-->
+    <string name="shop_registration_Header">Shop Registration</string>
+    <string name="nextbtn">Next</string>
+    <string name="backbtn">Back</string>
+    <string name="number_of_branches">Number Of Branches</string>
+
+    <!--Yatin String From Arebic 03/02/2017-->
+
+    <string name="special_Offers_discounts">Special Offers &amp; Discounts</string>
+    <string name="to">to</string>
+    <string name="valid_from">Valid From</string>
+    <string name="enter_bid_value">Enter bid value</string>
+    <string name="piece">Piece</string>
+    <string name="in_stock">In stock</string>
+    <string name="shipment_information">Shipment Information</string>
+    <string name="added_to_wishlist">Added to Wishlist</string>
+    <string name="you_must_have_to_add_same_shop_product_in_your_cart">You must have to add same shop product in your cart</string>
+    <string name="profile_update_fail">Profile update fail</string>
+    <string name="profile_update_successfully">Profile update successfully</string>
+    <string name="photo_update_successfully">Photo update successfully</string>
+    <string name="car_photo_update_successfully">Car photo update successfully</string>
+    <string name="vehicle_details">VEHICLE DETAILS</string>
+    <string name="shop_timing">SHOP TIMING</string>
+    <string name="contact_details">CONTACT DETAILS</string>
+    <string name="basic_details">BASIC DETAILS</string>
+    <string name="item_alredy_in_wishlist">Item alredy in wishlist</string>
+    <string name="unable_to_save_image_to_photo_album">Unable to save image to Photo Album.</string>
+    <string name="save_image_to_photo_album">Save image to Photo Album</string>
+    <string name="shipment_confirmed">Shipment Confirmed</string>
+    <string name="your_order">Your Order</string>
+    <string name="you">You</string>
+    <string name="no_record_found">No Record Found</string>
+    <string name="distance">Distance</string>
+    <string name="select">Select</string>
+    <string name="charges">Charges</string>
+    <string name="enter_your_shipment_charges">Enter your Delivery Shipment Charges</string>
+    <string name="retain">RETAIN</string>
+    <string name="other">Other</string>
+    <string name="product_information">Product Information</string>
+    <string name="bid_information">Bid Information</string>
+    <string name="reject">REJECT</string>
+    <string name="detailreject">REJECT</string>
+    <string name="assign_to_shipment">ASSIGN TO SHIPMENT</string>
+    <string name="oreder_cancelled_by_shop">ORDER CANCELLED BY SHOP</string>
+    <string name="oreder_cancelled_by_customer">ORDER CANCELLED BY CUSTOMER</string>
+    <string name="oreder_cancelled_by_you">ORDER CANCELLED BY YOU</string>
+    <string name="date_time">Date &amp; Time</string>
+    <string name="date_timewallet">Date &amp; Time :</string>
+    <string name="enter">Enter</string>
+    <string name="message">message</string>
+    <string name="retain_msg">Retain message</string>
+    <string name="something_get_wrong_please_try_again_later">Something get wrong,Please try again later</string>
+    <string name="resend">Resend</string>
+    <string name="same_shop_name_in_both_is_not_valid">Same shop name in both is not valid.</string>
+    <string name="contact_number">Enter Mobile Number</string>
+    <string name="terms_and_conditions">TERMS &amp; CONDITIONS</string>
+    <string name="shop_review">Shop Review</string>
+    <string name="delivery_review">Delivery Review</string>
+    <string name="shipment_review">Shipment Review</string>
+    <string name="shop_rating">Shop Rating</string>
+    <string name="delivery_rating">Delivery Rating</string>
+    <string name="shipment_rating">Shipment Rating</string>
+    <string name="link_to_shop_will_add_shop_to_shop">Link To Shop will add all products of From Shop to To Shop.</string>
+    <string name="select_shop_branch">Select shop/branch</string>
+    <string name="rate_and_review">Rate &amp; Review</string>
+    <string name="search_type">Search Type</string>
+    <string name="Status">Status:</string>
+    <string name="Statuswallet">Status :</string>
+    <string name="product_condition">Product Condition</string>
+    <string name="new_text">New</string>
+    <string name="used">Used</string>
+    <string name="all">All</string>
+    <string name="price">Price</string>
+    <string name="fixed">Fixed</string>
+    <string name="discount">Discount :</string>
+    <string name="discount_">Discount</string>
+    <string name="discount_Offer">Discount / Offer</string>
+    <string name="add_product_photo">Add product photo</string>
+    <string name="select_sub_category">Select Sub Category</string>
+    <string name="select_child_category">Select Child Category</string>
+    <string name="product_conditions">Product Condition</string>
+    <string name="dozen">Dozen</string>
+    <string name="package_text">Package</string>
+    <!-- <string name="guarantee_In_year">Guarantee(In Year)</string>-->
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="pick_up_by_me">Pick Up By Me</string>
+    <string name="delivery_by_shop">Delivery By Shop</string>
+    <string name="by_sadad">By Sadad</string>
+    <string name="by_cash">By Cash</string>
+    <string name="by_credit_card">By Credit Card</string>
+    <string name="manage_offers">Manage Offers</string>
+    <string name="manage_products">Manage Products</string>
+    <string name="update_product_photo">Update product photo</string>
+    <string name="update_product">Update Product</string>
+    <string name="update_secondary_images">Update secondary images</string>
+    <string name="Delivery_date_time">Delivery Date &amp; Time</string>
+    <string name="product_payment_information">Product Payment Information</string>
+    <string name="special_request_note">Special Request Note</string>
+    <string name="confirm_purchase">Confirm Purchase</string>
+    <string name="delivery_payment_information">Delivery Payment Information</string>
+    <string name="with_item_bill">With Item Bill</string>
+    <string name="cash_afterd_delivery">Cash After Delivery</string>
+    <string name="chat">Chat</string>
+    <string name="current_location">Current Location</string>
+    <string name="other_location">Other Location</string>
+    <string name="please_enter_valid_city_name">Please enter valid city name</string>
+    <string name="please_enter_valid_state_name">Please enter valid state name</string>
+    <string name="please_enter_valid_country_name">Please enter valid country name</string>
+    <string name="delivery_shipment_charges">Delivery Shipment Charges :</string>
+    <string name="zip_code">Pin code</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="order_no">Order No : </string>
+    <string name="order_no_lable">Order No</string>
+    <string name="order_amount">Order Amount</string>
+    <string name="delivery_method">Delivery Method</string>
+    <string name="order_date">Order Date</string>
+    <string name="delivery_date">Delivery Date</string>
+    <string name="shop_confirmed">Shop Confirmed</string>
+    <string name="deliver_item_delivered">Delivery item delivered</string>
+    <string name="customer_rating">Customer rating</string>
+    <string name="customer_payment">Customer Payment</string>
+    <string name="ready_for_delivery">Ready For Delivery</string>
+    <string name="delivery_confirmed">Delivery Confirmed</string>
+    <string name="delivery_item_collected">Delivery item collected</string>
+    <string name="order_recevied">Order Recevied</string>
+    <string name="manage_shops">Manage Shops</string>
+    <string name="total_amount">Subtotal: </string>
+    <string name="total_lable">Total: </string>
+    <string name="customer_information">Customer Information</string>
+    <string name="order_information">Order Information</string>
+    <string name="delivery_information">Delivery Information</string>
+    <string name="assign_to_shop">Assign To Shop</string>
+    <string name="assign_to_delivery">assign to delivery</string>
+    <string name="accept">ACCEPT</string>
+    <string name="pay_now">PAY NOW</string>
+    <string name="pay_cash">PAY CASH</string>
+    <string name="ready_for_shipment">Ready for shipment</string>
+    <string name="going_to_collect">Going To Collect</string>
+    <string name="track_your_order">Track Your Order</string>
+    <string name="delivered">DELIVERED</string>
+    <string name="recieve">RECEIVED</string>
+    <string name="recieve_with_issue">RECEIVED WITH ISSUE</string>
+    <string name="not_recieve">NOT RECEVIED</string>
+
+    <string name="redirect_message">Please log in to view this page</string>
+
+    //remained in arabic
+    <string name="process">PROCESS</string>
+    <string name="ready_for_pick_up">Ready For Pick Up</string>
+    <string name="add_secondary_images">Add secondary images</string>
+    <string name="no_notification">There are no notifications</string>
+    <string name="select_free_item">Select Free Item</string>
+    <string name="notification_date_time">Notification Date And Time</string>
+    <string name="notification_message">Notification Message</string>
+    <string name="main_shop">Main Shop</string>
+    <string name="buy_1_get_1">Buy 1 Get 1</string>
+    <string name="conditional_discount">Conditional Discount</string>
+    <string name="add_discoount">Add Discount</string>
+    <string name="server_issue">SERVER ISSUE</string>
+    <string name="offer_starts">Offer starts :</string>
+    <string name="offer_end">Offer Expire :</string>
+    <string name="last_update">Last Update:</string>
+    <string name="buy_item_get_discount">Buy item Get Discount</string>
+
+    <string name="buy_item">Buy Item:</string>
+    <string name="get_item">Get Item:</string>
+    <string name="offer_ondition">Offer Condition:</string>
+    <string name="establishment">Establishment</string>
+    <string name="company">Company</string>
+    <string name="store">store</string>
+    <string name="joint_store">Joint Store</string>
+    <string name="cash_only">Cash Only</string>
+    <string name="credit_card_only">Credit Card Only</string>
+    <string name="credit_cash">Credit Card/ Cash</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="your_discount">Your Discount</string>
+    <string name="your_bid">Your Bid</string>
+    <string name="bidno">BId No.</string>
+    <string name="bid_date_time">bid date &amp; time</string>
+    <string name="amend">AMEND</string>
+    <string name="all_shops">All Shops</string>
+    <string name="open_24">Open 24</string>
+    <string name="add_branch">Add Branch</string>
+    <string name="my_branches">My Branches</string>
+    <string name="subscribe_newslet">Subscribe Newsletter</string>
+    <string name="my_offer">My Offer</string>
+    <string name="my_discount">My Discount</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="mobile_number_length_should_be_between">Mobile number length should be between 8 to 15.</string>
+    <string name="password_does_not_match">Password does not match.</string>
+    <string name="password_length_should_be_between">Password length should be between 6 to 8 .</string>
+    <string name="please_enter_your_name">Please enter your name.</string>
+    <string name="please_enter_character_only">Please enter character only .</string>
+    <string name="please_enter_your_email_iD">Please enter your email ID .</string>
+    <string name="please_enter_valid_email_iD">Please enter valid email ID .</string>
+    <string name="please_choose_search_type">Please choose search type</string>
+    <string name="please_choose_product_category">Please choose product category</string>
+    <string name="please_enter_city">Please enter city</string>
+    <string name="please_enter_search_value">Please enter search value</string>
+
+    <string name="please_choose_statu">Please choose status</string>
+    <string name="please_enter_brand_name">Please enter brand name</string>
+    <string name="please_select_any_price_type">Please select any price type</string>
+    <string name="please_select_offer_discount">Please select offer/discount</string>
+    <string name="no_products_found">No products found</string>
+    <string name="no_products">No products</string>
+    <string name="total_purchse_more_than">If your total purchase more than</string>
+    <string name="no_sub_category">No Sub Category</string>
+    <string name="Item">Item</string>
+    <string name="Product_subcategory">Product Subcategory</string>
+    <string name="qty">QTY :</string>
+    <string name="sorry_quantity_not_being_updates">Sorry, Quantity not being updates, Try agin later</string>
+    <string name="all_product_has_been_added_successfully">All product has been added successfully</string>
+    <string name="please_enter">Please enter</string>
+    <string name="please_select">Please select</string>
+    <string name="please">Please</string>
+    <string name="item_name">Item Name</string>
+    <string name="bidding_date_time">Bidding Date &amp; Time</string>
+
+    //Empty View
+    <string name="your_wishlist_is_empty">Your wishlist is empty!</string>
+    <string name="there_are_no_items_in_your_wishlist">There are no items in your wishlist.</string>
+    <string name="your_cart_is_empty">Your cart is empty!</string>
+    <string name="no_item_in_cart">There are no items in your cart.</string>
+    <string name="you_do_not_have_branches">You do not have branches.</string>
+    <string name="there_are_no_offers">No Offers</string>
+    <string name="there_are_no_offers_details">There are no offers currently \n available. Please try again later</string>
+    <string name="there_are_no_discounts">No Discounts</string>
+    <string name="there_are_no_discounts_details">There are no discounts currently \n available. Please try again later</string>
+    <string name="you_do_not_have_any_bids">You do not have any Bids</string>
+    <string name="you_do_not_have_any_order">You do not have any Order.</string>
+    <string name="chat_list_is_empty">Chat list is empty.</string>
+    <string name="chat_with">Chat With : </string>
+
+    //settings
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="restart_app">(App Restart Required)</string>
+    <string name="cancle">Cancel</string>
+    <string name="cancle_bid">Cancel Bid</string>
+    <string name="set">Change</string>
+    <string name="actions">ACTIONS</string>
+    <string name="user_name">Enter Name</string>
+
+    //my Account
+    <string name="send">Send</string>
+    <string name="enter_contact_number_for_otp_code">Send OTP to Mobile Number</string>
+    <string name="rating">Rating</string>
+    <string name="sar">SAR</string>
+
+    ////ACCPUNT TYPE
+    <string name="female">Female</string>
+    <string name="Male">Male</string>
+    <string name="delivery_registration">DELIVERY REGISTRATION</string>
+    <string name="shipment_registration">SHIPMENT REGISTRATION</string>
+    <string name="registrer_new_braanch">REGISTER NEW BRANCH</string>
+    <string name="update_profile">Profile Update</string>
+
+    ///LEFT MENU
+    <string name="sign_in">Log In</string>
+    <string name="register">Register</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="log_out">Exit</string>
+    <string name="language">Language</string>
+    <string name="signup">SIGNUP</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="please_check_your_internet">Please check your internet.</string>
+    <string name="network_unavailable">"Network unavailable</string>
+    <string name="camera">Camera</string>
+    <string name="photo_gallery">Photo Gallery</string>
+
+
+    //HOME - HEADER
+    <string name="map">Map</string>
+
+    //REGISTRATION
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="have_an_account">Have an Account? Sign In</string>
+    <string name="registration">Registration</string>
+    <string name="all_users">All Users</string>
+    <string name="customers">Customers</string>
+    <string name="shops">Shops</string>
+    <string name="done">Done</string>
+    <string name="next">Next Step</string>
+
+    //Shop REG
+    <string name="mon">Monday</string>
+    <string name="tues">Tuesday</string>
+    <string name="wed">Wednesday</string>
+    <string name="thus">Thursday</string>
+    <string name="fri">Friday</string>
+    <string name="sat">Saturday</string>
+    <string name="sun">Sunday</string>
+    <string name="shop_category">Shop Category</string>
+    <string name="shop_sub_category">Shop Sub Category</string>
+    <string name="shop_child_category">Shop Child Category</string>
+    <string name="shop_owner_name">Shop Owner Name</string>
+    <string name="shop_owner_email">Shop Owner EmailID</string>
+    <string name="shop_owner_mobileno">Shop Owner Mobile Number</string>
+
+
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_number_length">Phone number length should be between 8 to 15.</string>
+    <string name="fax">Fax</string>
+
+    <string name="website">Website:</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_shop_category">Select Shop Category</string>
+    <string name="score">Score</string>
+    <string name="branch_code">Branch Code</string>
+    <string name="shop_photo">Shop Photo</string>
+    <string name="shop_terms_and_conditions">Shop Terms and Conditions</string>
+    <string name="shop_classification">Shop Classification</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="shop_delivery">Shop Delivery</string>
+    <string name="open_time">Open Time</string>
+    <string name="close_time">Close Time</string>
+    <string name="closing_time">Close Time</string>
+    <string name="order_history">Order History</string>
+
+    <string name="otp_failed">OTP failed</string>
+    <string name="otp_is_incorrect_try_again">OTP is incorrect. Please try again.</string>
+    <string name="pincode">Pincode</string>
+
+    <string name="mon_working_hours">Monday Working Hours</string>
+    <string name="tues_working_hourse">Tuesday Working Hours</string>
+    <string name="wedn_working_hours">Wednesday Working Hours</string>
+    <string name="thus_working_hourse">Thursday Working Hours</string>
+    <string name="fri_working_hourse">Friday Working Hours</string>
+    <string name="sat_working_hourse">Saturday Working Hours</string>
+    <string name="sun_working_hourse">Sunday Working Hours</string>
+    <string name="please_enter_valid_website_name">Please enter valid website name</string>
+    <string name="please_select_working_hourse">Please select working hours</string>
+    <string name="must_have_to_add_same_shop_product_in_your_cart">Must have to add some shop product in your cart.</string>
+    <string name="delivery_car_type">Delivery Car Type</string>
+
+    //Delivery REgistration
+    <string name="company_name">Company name</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="car_model_no">Model No</string>
+
+    <string name="please_add_car_photo">Please add car photo.</string>
+    <string name="user_type">User Type</string>
+    <string name="car_photo">Car Photo</string>
+
+
+    //Order Detail
+    <string name="shipment_to_delivery">Shipment or Delivery</string>
+    <string name="no_any_order_found">No any orders found</string>
+
+    //Customer
+    <string name="gender">gender</string>
+    <string name="otp_verification">OTP Verification</string>
+
+    //Shipment
+    <string name="shipment_terms_and_conditions">Shipment Terms and Conditions</string>
+    <string name="Companyname">Company Name</string>
+    <string name="contact_person">Contact Person</string>
+    <string name="account_no">Account No</string>
+    <string name="id_number">ID Number</string>
+    <string name="private_text">Private</string>
+    <string name="add_your_photo">Add Your Photo</string>
+
+    //LOGIN
+    <string name="not_having_an_account">Not having an Account?</string>
+
+    //Annotation Callout
+    <string name="order">Order</string>
+    <string name="chat_with_shop">Chat With Shop</string>
+    <string name="go_to_shop">Go to shop</string>
+
+    <string name="type_msg_here">Type a message here</string>
+
+
+    <string-array name="shop_offer_type">
+        <item>Select Offer Type</item>
+        <!-- <item>Buy 1 Get 1 / Buy 1 Get Another Offer</item>-->
+        <item>Get this item free </item>
+        <item>Conditional Offer</item>
+    </string-array>
+
+    <string-array name="shop_type">
+        <item>Select Shop Type</item>
+        <item>Main shop</item>
+        <item>Branch</item>
+    </string-array>
+
+    <string-array name="shop_branch_type">
+        <item>Select shop/branch</item>
+        <item>Main shop</item>
+        <!--<item>Branch</item>-->
+    </string-array>
+
+    <string-array name="free_item">
+        <item>Select Free Item</item>
+    </string-array>
+
+    <string-array name="shop_discount_type">
+        <item>Select Discount Type</item>
+        <item>Buy specified product and get discount</item>
+        <item>Conditional Discount</item>
+    </string-array>
+
+    <string-array name="searchTypeArr">
+        <item>Search type</item>
+        <item>Item</item>
+        <item>shop</item>
+    </string-array>
+
+    <string-array name="cartItemArray">
+        <item>Qty: 1</item>
+        <item>Qty: 2</item>
+        <item>Qty: 3</item>
+        <item>Qty: 4</item>
+    </string-array>
+
+    <!--Array by yatin -->
+
+    <string-array name="carTypeArray">
+        <item>Car Type</item>
+        <!--<item>Small Car</item>
+        <item>Van</item>
+        <item>Pick up</item>-->
+    </string-array>
+
+    <!--Array for Shop registration third screen -->
+
+    <string-array name="shopType">
+        <item>Electronic</item>
+        <item>Fashion</item>
+
+    </string-array>
+    <string-array name="shopname">
+        <item>Select Shop Name</item>
+    </string-array>
+
+    <string-array name="productname">
+        <item>Select Product</item>
+    </string-array>
+
+    <string-array name="productfreeitem">
+        <item>Select Free Item</item>
+    </string-array>
+
+    <string-array name="shopClassification">
+        <item>Shop Classification</item>
+        <item>Store(Private)</item>
+        <item>Establishment</item>
+        <item>Company</item>
+        <item>Joint Store</item>
+
+    </string-array>
+
+    <string-array name="selectCategory">
+        <item>Select Category</item>
+    </string-array>
+
+    <string-array name="selectprodyctCategory">
+        <item>Please select product section</item>
+    </string-array>
+
+    <string-array name="subCategory">
+        <item>Select Sub Category</item>
+    </string-array>
+
+    <string-array name="childCategory">
+        <item>Select Child Category</item>
+    </string-array>
+
+    //remain in arabic
+    <string-array name="productSize">
+        <item>Product Condition</item>
+        <!--  <item>Dozen</item>
+        <item>Package</item>
+        <item>Piece</item>
+        <item>Weight</item>-->
+        <item>New</item>
+        <item>Used</item>
+    </string-array>
+
+    <string name="subCategoryp">Select Sub Category</string>
+
+    <string-array name="sellingType">
+        <item>Selling Type</item>
+        <item>Dozen</item>
+        <item>Package</item>
+        <item>Piece</item>
+        <item>Weight</item>
+    </string-array>
+
+    //remained in arabic
+    <string-array name="visibilityOptions">
+        <item>Visibility Option</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="guaranteeInYear">
+        <item>@string/guarantee_In_year</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="addonmaxlimit">
+        <item>@string/addon_max_limit</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string-array name="weightonmaxlimit">
+        <item>@string/weight_max_limit</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="paymentMethod">
+        <item>Payment Method</item>
+        <item>Cash Only</item>
+        <item>Credit Card Only</item>
+        <item>Credit Card / Cash</item>
+    </string-array>
+
+    <string-array name="shopDelivery">
+        <item>Shop Delivery</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+
+    <string-array name="workingTIme">
+        <item>Open Time</item>
+        <item>Open 24 Hours</item>
+        <item>00:00</item>
+        <item>00:30</item>
+        <item>01:00</item>
+        <item>01:30</item>
+        <item>02:00</item>
+        <item>02:30</item>
+        <item>03:00</item>
+        <item>03:30</item>
+        <item>04:00</item>
+        <item>04:30</item>
+        <item>05:00</item>
+        <item>05:30</item>
+        <item>06:00</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>09:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+        <item>20:00</item>
+        <item>20:30</item>
+        <item>21:00</item>
+        <item>21:30</item>
+        <item>22:00</item>
+        <item>22:30</item>
+        <item>23:00</item>
+        <item>23:30</item>
+        <item>Closed</item>
+    </string-array>
+
+    <string-array name="workingTImeClose">
+        <item>Close Time</item>
+        <item>Open 24 Hours</item>
+        <item>00:00</item>
+        <item>00:30</item>
+        <item>01:00</item>
+        <item>01:30</item>
+        <item>02:00</item>
+        <item>02:30</item>
+        <item>03:00</item>
+        <item>03:30</item>
+        <item>04:00</item>
+        <item>04:30</item>
+        <item>05:00</item>
+        <item>05:30</item>
+        <item>06:00</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>09:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+        <item>20:00</item>
+        <item>20:30</item>
+        <item>21:00</item>
+        <item>21:30</item>
+        <item>22:00</item>
+        <item>22:30</item>
+        <item>23:00</item>
+        <item>23:30</item>
+        <item>Closed</item>
+    </string-array>
+
+    <string-array name="advanceCityName">
+        <item>Select City</item>
+        <item>Ahmedabad</item>
+        <item>Baroda</item>
+        <item>Mahesana</item>
+        <item>Surat</item>
+        <item>Mubai</item>
+        <item>Delhi</item>
+        <item>Pune</item>
+    </string-array>
+
+
+    //new added not in arabic
+    <string name="service_not_available">The background geocoding service is not available due to a network error or IO exception.</string>
+    <string name="invalid_lat_long_used">The latitude and/or longitude values that are provided in the Location object are invalid.</string>
+    <string name="no_address_found">The geocoder can\'t find an address for the given latitude/longitude.</string>
+    <string name="address_found">Address found</string>
+
+
+    <string name="find_nearest_delivery">Find Nearest Delivery</string>
+    <string name="find_nearest_shipment">Find Nearest Shipment</string>
+    <string name="discount_end_date">Discount End Date</string>
+    <string name="discount_start_date">Discount Start Date</string>
+    <string name="enter_discount">Enter Discount</string>
+    <string name="notes">Notes</string>
+    <string name="empty_directory">Empty Directory</string>
+    <string name="storage_removed">Storage was removed or unmounted.</string>
+    <string name="choose_file">Select a file</string>
+    <string name="error_selecting_file">Error selecting File</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="enter_date_time">Enter Date &amp; Time</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="delivery_cost">Delivery Cost: </string>
+    <string name="please_select_gender">Please select your Gender</string>
+    <string name="please_enter_you_age">Please enter your age</string>
+    <string name="age_cannot_0">Age can not be 0</string>
+    <string name="update_order">UPDATE ORDER</string>
+    <string name="select_city">Select City</string>
+    <string name="select_product">Select Product</string>
+    <string name="no_near_delivery_found">No Near Delivery Address Found</string>
+    <string name="no_shop_found">No shop found</string>
+    <string name="pls_enter_district_name">Please Enter District Name</string>
+    <string name="pls_enter_pincode">Please Enter Pincode</string>
+    <string name="no_chat_yet">No Chat Yet</string>
+    <string name="enter_special_request_note">Enter Special Request Note</string>
+    <string name="please_select_payment_info">Please Select Payment Information</string>
+    <string name="pls_select_datetime">Please Select Date Time</string>
+    <string name="accept_terms_and_conditon">Please accept terms and condtion</string>
+    <string name="pls_enter_bid_ammount">Please enter Bid amount</string>
+    <string name="pls_enter_bid_qty_greater_then_zero">Please enter Bid quantity greater than 0</string>
+
+
+    <string name="please_select_branch_conditions">Please Select Branch/Shop</string>
+    <string name="please_select_product_conditions">Please Select Product Condition</string>
+    <string name="please_select_category">Please Select Category</string>
+    <string name="please_select_sub_category">Please Select Sub Category</string>
+    <string name="please_select_child_category">Please Select Child Category</string>
+    <string name="please_selling_type">Please Selling Type</string>
+    <string name="please_select_guarantee_In_year">Please Select Guarantee</string>
+    <string name="please_select_vehicle_type">Please Select Vehicle Type</string>
+
+    <string name="edit_secondary_images">Edit secondary images</string>
+    <string name="edit_product_photo">Edit product photo</string>
+
+    <string name="barcode_in">Barcode In</string>
+    <string name="barcode_out">Barcode Out</string>
+
+    <string name="please_enter_number_of_branch">Please enter number of branch</string>
+    <string name="please_select_classification">Please Select Shop Classification</string>
+    <string name="please_select_payment_method">Please Select Payment Method</string>
+    <string name="please_select_shop_delivery">Please Select Shop Delivery</string>
+
+    <string name="select_monday_open_time">Please Select Monday Open Time</string>
+    <string name="select_monday_close_time">Please Select Monday Close Time</string>
+
+    <string name="select_tuesday_open_time">Please Select Tuesday Open Time</string>
+    <string name="select_tuesday_close_time">Please Select Tuesday Close Time</string>
+
+    <string name="select_wed_open_time">Please Select Wednesday Open Time</string>
+    <string name="select_wed_close_time">Please Select Wednesday Close Time</string>
+
+    <string name="select_thurs_open_time">Please Select Thursday Open Time</string>
+    <string name="select_thurs_close_time">Please Select Thursday Close Time</string>
+
+    <string name="select_friday_open_time">Please Select Friday Open Time</string>
+    <string name="select_friday_close_time">Please Select Friday Close Time</string>
+
+    <string name="select_satday_open_time">Please Select Saturday Open Time</string>
+    <string name="select_satday_close_time">Please Select Saturday Close Time</string>
+
+    <string name="select_sunday_open_time">Please Select Sunday Open Time</string>
+    <string name="select_sunday_close_time">Please Select Sunday Close Time</string>
+
+    <string name="number_of_branch_grater">Number of branch must be greater than 0</string>
+    <string name="track_me">Track Me</string>
+
+    <string name="choose_formats">Choose Formats</string>
+    <string name="select_camera">Select a Camera</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+
+    <string name="flash_on">Flash [ON]</string>
+    <string name="flash_off">Flash [OFF]</string>
+    <string name="auto_focus_on">Auto Focus [ON]</string>
+    <string name="auto_focus_off">Auto Focus [OFF]</string>
+    <string name="formats">Formats</string>
+
+    <string name="select_type_category">Please select Type/Category</string>
+    <string name="please_select_product">Please Select Product</string>
+    <string name="please_select_free_product">Please Select Free Product</string>
+    <string name="please_select_noti_datetime">Please Select notification date time</string>
+    <string name="enter_notification_message">Enter Notification Message</string>
+
+    <string-array name="discount_conditon">
+        <item>Product Condition</item>
+        <item>Total Purchase More Than 1000</item>
+        <item>Total Purchase More Than 2000</item>
+        <item>Total Purchase More Than 3000</item>
+        <item>Total Purchase More Than 4000</item>
+        <item>Total Purchase More Than 5000</item>
+        <item>Total Purchase More Than 6000</item>
+    </string-array>
+
+
+    <string name="location_updated_message">Location Updated</string>
+    <string name="select_shop_image">Please Select Shop Image</string>
+    <string name="offer_type">Offer Type</string>
+    <string name="free">(Free)</string>
+
+    <string name="manage_products_by_shop">Manage Products By Shop</string>
+    <string name="bid_management">Bid Management</string>
+    <string name="order_management">Order Management</string>
+    <string name="item_collected">Item Collected</string>
+    <string name="scan_barocde">Scan Barcode</string>
+
+    <string name="pls_select_date">Please Select Date</string>
+    <string name="start_date_grater_than_today">Start date must be greater than today\'s date</string>
+    <string name="end_date_grater_than_start">End date must be greater than start date</string>
+    <string name="exipry_date_grater_than_today">Expiry date must be greater than today\'s date</string>
+
+    <string name="offer_applied">you will get discount</string>
+    <string name="offer_applied_free"> you will get this item free</string>
+    <string name="off">off</string>
+    <string name="feedback">Feedback</string>
+    <string name="pls_enter_feedback">Please Enter Feedback</string>
+    <string name="feedback_submitted">Feedback Submitted</string>
+
+    <string name="manual_barcode_in">Manual Barcode In</string>
+    <string name="manual_barcode_out">Manual Barcode Out</string>
+    <string name="pls_select_car_type">Please Select Car Type</string>
+    <string name="rate_shop">Please rate shop</string>
+
+    <string name="order_updated">Order Updated</string>
+    <string name="order_prepared">Order Prepared</string>
+    <string name="order_prepared_by">Order Prepared By</string>
+    <string name="current_location_not_found">Current Location not Found</string>
+    <string name="free_product">Free Product</string>
+    <string name="tracking_not_started">Tracking not started</string>
+    <string name="no_vehicle_found">No any vehicle found</string>
+    <string name="datetime_must_be_greater">DateTime must be grater than current date time</string>
+    <string name="fail_to_bid_on_product">Fail to bid on product</string>
+    <string name="you_can_not_bid_less_than_bid">Bid minimum amount must be less than fix price</string>
+
+    <string name="pls_select_type">Please select type</string>
+    <string name="riyadh">Riyadh</string>
+    <string name="image_deleted">Image deleted</string>
+
+    <string name="camera_permission">Without grant Camera Permission you can not use capture images</string>
+    <string name="storage_permission">Storage Permission required to store captured image</string>
+    <string name="location_permission">Location Permission is required for signup and location tracking</string>
+    <string name="sms_permission">SMS Permission is required to read OTP</string>
+    <string name="permission">Permission</string>
+
+    <string name="delivery_location_msg">Without allow Location permission order tracking not works</string>
+
+    <string name="select_image">Select image</string>
+    <string name="products">Products</string>
+    <string name="you_can_add_max_five_image">You can add maximum five images</string>
+
+
+    <string name="geocoder_issue">Geocoder is not available.</string>
+    <string name="could_not_get_location">Could not get locaion</string>
+    <string name="fail_to_send">Fail to send message retry</string>
+    <string name="fail_to_update_image">Fail to update image</string>
+
+    <string name="both_shop_should_not_same">Both shop should not be same</string>
+    <string name="no_route_found">No route found between sepcified locations.</string>
+    <string name="shop_working_time_not_found">Shop Working Time Not Found</string>
+
+    <string name="pls_select_product_image">Please Select Product Image</string>
+    <string name="signin_to_start_chat">Please Signin to Start Chat</string>
+
+
+    <string name="gps_setting">GPS settings</string>
+    <string name="gps_enable_setting">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="dialog_setting">Settings</string>
+    <string name="alert_dlivery">Customer has not done Payment yet. Please Wait till Payment.</string>
+
+    <string name="coupon_code">Coupon Code</string>
+    <string name="coupon_type">Coupon Type : </string>
+    <string name="enterlable">Enter Label</string>
+    <string name="enteraddonlable">Enter Addon</string>
+    <string name="addaddon">Add Addon Value</string>
+    <string name="addweight">Add Weight Value</string>
+    <string name="enterprice">Enter Price</string>
+
+    <string name="addonlablepricemissing">Addon Label or Price missing</string>
+    <string name="enterlableprice">Enter at least One Label and Price</string>
+    <string name="lablepricemissing">Label or Price missing</string>
+    <string name="pricevalidation">Price can not be blank or zero</string>
+    <string name="entercategoryname">Enter Category Name</string>
+    <string name="enteratleastonecategory">Enter at least one category name</string>
+    <string name="please_select_shopcategory">Please Select Shop Category</string>
+    <string name="product_listing">Product listing</string>
+    <string name="addons">Addons</string>
+    <string name="version">Version</string>
+    <string name="orderacceptadmin">Shop confirm order required:</string>
+    <string name="radiobuttonvalidation">Please select shop confirm order Yes/No</string>
+
+
+    <string name="place_api_key">AIzaSyDaxeCtJD-fONqaAWyDPhRe2JsJGa5H13s</string>
+    <string name="place_api_keynew">AIzaSyCO5Dwcx2K9yFJ0bQIJ3r-37Sb_oMUUza8</string>
+    <string name="delivery_order_already_confirmed">Sorry this order already confirmed by other Delivery</string>
+    <string name="shoplocationnotfound">Shop/User Location not Found</string>
+    <string name="shoplatlongnotfound">Shop Location not Found</string>
+    <string name="addmorewight">Add More Wight Fields</string>
+    <string name="addmoreaddons">Add More Addons Fields</string>
+    <string name="offlinemsg">You will not get any new order until you Online again</string>
+    <string name="default_notification_channel_id" translatable="false">my_channel_01</string>
+    <string name="uploadbill">Upload Bill</string>
+    <string name="uploadbillvalidation">Please upload bill before item collected</string>
+    <string name="uploadedbill">Uploaded Bill</string>
+    <string name="upload">Upload</string>
+    <string name="choosephototoupload">Please, Choose photo to upload</string>
+    <string name="photovalidation">Image size larger than 2MB. Please make sure photo size should not greater than 2MB.</string>
+    <string name="addweightlable">Add Weight Lable</string>
+    <string name="addaddonlable">Add Addon Lable</string>
+    <string name="addweightlablevalidation">Please Add Weight Lable</string>
+    <string name="addaddonlablevalidation">Please Add Addon Lable</string>
+
+    <string name="undermaintenance">We are undergoing a bit of Scheduled maintenance. Sorry for inconvenience.</string>
+    <string name="alert">Alert</string>
+    <string name="displayonhome">(It will display on Homepage)</string>
+    <string name="onemandatory">(At least 1 mandatory)</string>
+    <string name="uploadedphotos">Uploaded Photos</string>
+    <string name="yourwalletamount">Your wallet amount is</string>
+    <string name="paidamount">Paid Amount :</string>
+    <string name="delivery_chargewallet">Delivery Charge :</string>
+    <string name="orderupdatemessage">Please check order has been updated</string>
+    <string name="branchupdatemessage">Please check branch has been updated</string>
+
+</resources>
+

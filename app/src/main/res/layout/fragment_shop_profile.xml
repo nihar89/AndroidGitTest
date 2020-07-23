@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical"
+    tools:context=".fragments.ShopProfileFragment">
+
+    <EditText
+        android:id="@+id/spf_etShopName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_edittext"
+        android:hint="@string/shop_name"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textSize="@dimen/content_text_size" />
+
+    <EditText
+        android:id="@+id/spf_etCompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_edittext"
+        android:hint="@string/shop_company_name"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textSize="@dimen/content_text_size" />
+
+    <EditText
+        android:id="@+id/spf_etManagerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_edittext"
+        android:hint="@string/shop_manager_name"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/spf_etMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_edittext"
+        android:hint="@string/mobile_no"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="@dimen/content_text_size" />
+
+    <EditText
+        android:id="@+id/spf_etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_edittext"
+        android:hint="@string/phone_number"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="@dimen/content_text_size" />
+
+    <EditText
+        android:id="@+id/spf_etFaxNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_edittext"
+        android:hint="@string/fax"
+        android:inputType="number"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="@dimen/content_text_size" />
+
+    <Button
+        android:id="@+id/spf_btnSubmit"
+        android:layout_width="120dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_round_shap_primery_color"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/header_text_size"
+        android:textStyle="bold" />
+
+</LinearLayout>
+

@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mahlati_logo_new" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_select_country_country"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_bg_trans"
+            android:gravity="center"
+            android:hint="@string/select_country"
+            android:textColor="@color/login_text_color"
+            android:textColorHint="@color/login_text_color"
+            android:textSize="@dimen/content_text_size" />
+
+        <TextView
+            android:id="@+id/fragment_select_country_city"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/fragment_select_country_country"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_bg_trans"
+            android:visibility="gone"
+            android:gravity="center"
+            android:hint="@string/select_city"
+            android:textColor="@color/login_text_color"
+            android:textColorHint="@color/login_text_color"
+            android:textSize="@dimen/content_text_size" />
+
+        <Button
+            android:id="@+id/fragment_select_country_button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/fragment_select_country_city"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_backgrond"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

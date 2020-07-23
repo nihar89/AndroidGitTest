@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "839850107383",
+    "firebase_url": "https://mahlatibusiness.firebaseio.com",
+    "project_id": "mahlatibusiness",
+    "storage_bucket": "mahlatibusiness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839850107383:android:a6adba776ebe13c4ad8ef2",
+        "android_client_info": {
+          "package_name": "com.mahalati.mahalatibusiness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839850107383-bepc3u1s84n9925ujas8k978eio2obk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaxeCtJD-fONqaAWyDPhRe2JsJGa5H13s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839850107383-bepc3u1s84n9925ujas8k978eio2obk3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

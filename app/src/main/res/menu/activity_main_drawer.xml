@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/home"
+            android:title="Dashbord" />
+
+        <item
+            android:id="@+id/vintage_victoria"
+            android:title="Vintage Victoria Bagi" />
+        <item
+            android:id="@+id/patiala_green"
+            android:title="Patiala Green Bagi" />
+
+        <item
+            android:id="@+id/ac_bagi"
+            android:title="A.C. Bagi" />
+        <item
+            android:id="@+id/natural"
+            android:title="Natural Kalash Bagi" />
+
+
+        <item
+            android:id="@+id/white_round"
+            android:title="White Round Bagi" />
+        <item
+            android:id="@+id/white_square"
+            android:title="White Square Bagi" />
+
+        <item
+            android:id="@+id/natural_ball"
+            android:title="Natural Ball Bagi" />
+        <item
+            android:id="@+id/navrang_mirror"
+            android:title="Navrang Mirror Bagi" />
+        <item
+            android:id="@+id/single_mini"
+            android:title="Single Mini Horse" />
+
+        <item
+            android:id="@+id/single_horse"
+            android:title="Single Horse" />
+        <item
+            android:id="@+id/silver_bagi"
+            android:title="Silver Bagi" />
+
+        <item
+            android:id="@+id/metal_rajwadi"
+            android:title="Metal Rajwadi Bagi" />
+        <item
+            android:id="@+id/other_bagi"
+            android:title="Other Bagis" />
+
+    </group>
+
+
+</menu>

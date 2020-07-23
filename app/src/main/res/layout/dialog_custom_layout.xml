@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="locale"
+    android:background="@drawable/dialog_background_drawable"
+    xmlns:htext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="180dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:src="@drawable/mahlati_logo_new" />
+
+
+        <TextView
+            android:id="@+id/tvNew"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/please_wait"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_width="180dp"
+            android:layout_marginBottom= "10dp"
+            android:layout_height="42dp" />
+
+</LinearLayout>

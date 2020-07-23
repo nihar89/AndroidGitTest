@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_delivery_profile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="none"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.DeliveryShipmentEditFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Spinner
+                android:id="@+id/ss_spCarType"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/spinner_back_new"
+                android:entries="@array/carTypeArray"
+                android:hint="@string/car_type"
+                android:inputType="textPostalAddress"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/ss_etCarColor"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:paddingLeft="8dp"
+                android:background="@drawable/round_edittext_color"
+                android:hint="@string/car_color"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/ss_tvCayPlateNo"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_edittext"
+                android:hint="@string/plate_no"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:maxLines="1"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/ss_etModelNo"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_edittext"
+                android:hint="@string/model_no"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:maxLines="1"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/ss_etLicenceNo"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_edittext"
+                android:hint="@string/licence_no"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:maxLines="1"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/ss_etRegisterNo"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_edittext"
+                android:hint="@string/register_no"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:maxLines="1"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/ss_etLicenceExpiryDate"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_edittext"
+                android:hint="@string/licence_expiry_no"
+                android:inputType="date"
+                android:paddingLeft="8dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/ss_etRegistrationExpiryDate"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_edittext"
+                android:hint="@string/registation_expiry_no"
+                android:inputType="date"
+                android:paddingLeft="8dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ss_etLocation"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="8dp"
+            android:background="@drawable/round_edittext"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:maxLines="1"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textAppearance="@android:style/Widget.ActionBar.TabText"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="13sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@id/fpo_cvMap"
+            app:cardCornerRadius="16dp"
+            android:visibility="gone"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.mahalati.mahalatibusiness.utils.CustomMapView
+                android:id="@+id/sigUpMap"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            </com.mahalati.mahalatibusiness.utils.CustomMapView>
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/ss_etAddress"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_edittext"
+                android:hint="@string/address"
+                android:maxLines="1"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/ss_etCity"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_edittext"
+                android:hint="@string/city"
+                android:inputType="textPersonName"
+                android:paddingLeft="8dp"
+                android:maxLines="1"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/ss_tvState"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_edittext"
+                android:hint="@string/state"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:maxLines="1"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/ss_etCountry"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:paddingLeft="8dp"
+                android:background="@drawable/round_edittext"
+                android:hint="@string/country"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/ss_tvStreet"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_edittext"
+                android:hint="@string/street"
+                android:maxLines="1"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/ss_etZipCode"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_edittext"
+                android:hint="@string/zipcode"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/terms_and_conditions"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/ss_etTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_edittext"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/fsr_btnBack"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_round_shap_primery_color"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/fsr_btnSubmit"
+                android:layout_alignParentRight="true"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_round_shap_primery_color"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

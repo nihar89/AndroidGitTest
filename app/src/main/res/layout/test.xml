@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/drawable_rectangle_round_edge_primary_color"
+        android:padding="10dp"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/cil1_tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hi"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:id="@+id/cil1_ivRead"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_check_mark"
+            android:layout_gravity="bottom|end"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="end"
+        android:background="@drawable/drawable_rectangle_round_edge_primary_color"
+        android:padding="10dp"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/cil1_tvMessage2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hi"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:id="@+id/cil1_ivRead2"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_check_mark"
+            android:layout_gravity="bottom|end"/>
+    </LinearLayout>
+
+</LinearLayout>

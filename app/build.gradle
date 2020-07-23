@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.mahalati.mahalatibusiness"
+        minSdkVersion 17
+        targetSdkVersion 29
+        versionCode 49
+        versionName "7.0.24"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    testImplementation 'junit:junit:4.12'
+
+    implementation project(':SilidingMenuLib')
+    implementation project(':calenderViewLibrary')
+    implementation project(':datetime-picker')
+    implementation project(':bsimagepicker')
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.google.maps.android:android-maps-utils:0.5+'
+    implementation 'com.google.android.libraries.places:places:1.0.0'
+
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    implementation 'com.pnikosis:materialish-progress:1.7'
+
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    implementation 'me.relex:photodraweeview:1.1.0'
+
+    implementation 'me.dm7.barcodescanner:zxing:1.9'
+
+    implementation 'com.squareup.retrofit:retrofit:1.9.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.squareup.okhttp:okhttp:2.3.0'
+    implementation 'com.facebook.fresco:fresco:1.0.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    implementation 'com.intuit.sdp:sdp-android:1.0.4'
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    implementation "org.java-websocket:Java-WebSocket:1.3.0"
+    implementation 'com.nabinbhandari.android:permissions:3.8'
+
+    /**
+     * Crash log lib
+     */
+//    implementation 'ch.acra:acra:4.9.2'
+    implementation "me.leolin:ShortcutBadger:1.1.13@aar"
+
+    //Event Bus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+
+}
+apply plugin: 'com.google.gms.google-services'

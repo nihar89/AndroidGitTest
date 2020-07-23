@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dialog_enter_phone"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/llBid"
+        android:background="@drawable/ic_send_btn_back"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/dub_tvBidNow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/update_bid"
+            android:textSize="@dimen/header_text_size"
+            android:textAppearance="@android:style/Widget.ActionBar.TabText"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/dub_tvCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textSize="@dimen/header_text_size"
+            android:textAppearance="@android:style/Widget.ActionBar.TabText"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+            <EditText
+                android:id="@+id/dub_etBidQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="right"
+                android:background="@drawable/round_edittext"
+                android:hint="@string/enter_qty"
+                android:inputType="number"
+                android:textSize="@dimen/header_text_size"
+                android:padding="8dp" />
+    </LinearLayout>
+</RelativeLayout>

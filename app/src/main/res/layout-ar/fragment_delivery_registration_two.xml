@@ -1,0 +1,542 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fss_rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AddProductFragment">
+
+    <RelativeLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/app_green">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/delivery_registration"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_green">
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teal_color"
+            android:text="@string/have_an_account"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false"
+        android:background="@drawable/sign_up_bg"
+        android:layout_below="@+id/llTop"
+        android:layout_above="@id/rlBottom"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fap_llAddPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#21000000"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/fsr_ivShipment"
+                    android:src="@drawable/ic_add_product_photo"
+                    android:scaleType="fitCenter"
+                    app:riv_corner_radius="8dip"
+                    app:riv_border_width="1dip"
+                    app:riv_border_color="#21000000"
+                    app:riv_mutate_background="true"
+                    app:riv_tile_mode="clamp"
+                    app:riv_oval="false"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/car_photo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Spinner
+                    android:id="@+id/ss_spCarType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/sign_up_spinner_back"
+                    android:gravity="center"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:entries="@array/carTypeArray"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:inputType="textPostalAddress"
+                    android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:id="@+id/fsr_etColor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:gravity="right|center_vertical"
+                    android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                    android:hint="@string/color"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="13sp"
+                    android:textCursorDrawable="@null"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/fsr_etPlateNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                    android:hint="@string/plate_no"
+                    android:inputType="text"
+                    android:gravity="right|center_vertical"
+                    android:lines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="13sp"
+                    android:textCursorDrawable="@null"/>
+
+                <EditText
+                    android:id="@+id/fsr_etModelNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:gravity="right|center_vertical"
+                    android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                    android:hint="@string/model_no"
+                    android:inputType="textWebEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="13sp"
+                    android:textCursorDrawable="@null"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/fsr_etLicenseno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                    android:hint="@string/licence_no"
+                    android:inputType="text"
+                    android:gravity="right|center_vertical"
+                    android:lines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="13sp"
+                    android:textCursorDrawable="@null"/>
+
+                <EditText
+                    android:id="@+id/fsr_etRegisterNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                    android:hint="@string/register_no"
+                    android:inputType="textWebEmailAddress"
+                    android:gravity="right|center_vertical"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="13sp"
+                    android:textCursorDrawable="@null"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/fsr_etLicenseExpiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                    android:hint="@string/licence_expiry_no"
+                    android:inputType="text"
+                    android:gravity="right|center_vertical"
+                    android:lines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="13sp"
+                    android:textCursorDrawable="@null"/>
+
+                <EditText
+                    android:id="@+id/fsr_etRegistrationExpiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                    android:hint="@string/registation_expiry_no"
+                    android:gravity="right|center_vertical"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="13sp"
+                    android:textCursorDrawable="@null"/>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/fsr_etLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                android:hint="@string/address"
+                android:gravity="right|center_vertical"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="13sp"
+                android:textCursorDrawable="@null"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fpo_cvMap"
+                android:visibility="gone"
+                app:cardUseCompatPadding="true"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.mahalati.mahalatibusiness.utils.CustomMapView
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                </com.mahalati.mahalatibusiness.utils.CustomMapView>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/fsr_etStreet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_backgrond"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/street"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="13sp"
+                    android:textCursorDrawable="@null"/>
+
+                <EditText
+                    android:id="@+id/fsr_etDeliveryCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_backgrond"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/city"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="13sp"
+                    android:textCursorDrawable="@null"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/fsr_etState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_backgrond"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/state"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="13sp"
+                    android:textCursorDrawable="@null"/>
+
+                <EditText
+                    android:id="@+id/fsr_etCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_backgrond"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/country"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="13sp"
+                    android:textCursorDrawable="@null"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/fsr_etAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_backgrond"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/district"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="13sp"
+                    android:textCursorDrawable="@null"/>
+
+                <EditText
+                    android:id="@+id/fsr_etZipcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_backgrond"
+                    android:gravity="right|center_vertical"
+                    android:hint="380051"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="13sp"
+                    android:textCursorDrawable="@null"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:padding="10dp"
+                android:text="@string/delivery_term_conditions"
+                android:textColor="@color/white"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/fsr_etTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                android:gravity="right|top"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:padding="10dp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="13sp"
+                android:textCursorDrawable="@null"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/fsr_btnBack"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/drawable_rectangle_round_edge_black_trans_color_white_border"
+                    android:text="@string/back"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/fsr_btnSubmit"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/drawable_rectangle_round_edge_black_trans_color_white_border"
+                    android:text="@string/submit"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

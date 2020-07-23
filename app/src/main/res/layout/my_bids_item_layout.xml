@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/white"
+    android:id="@+id/bil_cvMain"
+    app:cardUseCompatPadding="true"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvCancelled"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:text="@string/cancelled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/yb_llmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/yb_llbidno"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bidno"
+                android:textSize="@dimen/content_text_size"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bil_tvBidNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/content_text_size"
+                android:text="40 "
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/yb_llcustname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/customer_name"
+                android:textSize="@dimen/content_text_size"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/bil_tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/content_text_size"
+                android:text="Yanny"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/yb_llitemname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_name"
+                android:textSize="@dimen/content_text_size"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/bil_tvItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/content_text_size"
+                android:text="Tttt"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/yb_lltime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bidding_date_time"
+                android:textSize="@dimen/content_text_size"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/bil_tvDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_text_size"
+                android:text="2016-12-26 12:00 Pm"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/cancle"
+            android:background="@color/white"
+            android:id="@+id/yb_canclebtn"
+            android:textColor="@android:color/black"
+            android:textStyle="normal"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_close_grey_small"
+            android:textSize="@dimen/header_text_size" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

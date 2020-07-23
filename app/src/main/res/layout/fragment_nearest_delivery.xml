@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/yb_recyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/llNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appRed"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/my_bids"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />-->
+
+        <ImageView
+            android:layout_marginTop="64dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/mahlati_logo_new" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/no_near_delivery_found"
+            android:textAppearance="@android:style/Widget.ActionBar.TabText"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

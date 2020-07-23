@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/smp_tvShopInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_round_shap_primery_color"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textAllCaps="true"
+                android:text="@string/shop_information"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/smp_llShopInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cream_back_roun_rect"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/shop_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/smp_tvShopName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Sales India - Navrangpura"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/shop_company_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/smp_tvShopCompanyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="Sales India - Navrangpura"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/email"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/smp_tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="test@test.com"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/licence_no"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/smp_tvLicenseNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="123"
+                    android:textSize="@dimen/content_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/smp_tvBasicDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/btn_round_shap_primery_color"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/basic_details"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:background="@drawable/cream_back_roun_rect"
+                android:id="@+id/smp_llBasicDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/shop_manager_name"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/smp_tvShopManagerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="Vishal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/shop_category"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/smp_tvShopCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="xyz"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/shop_sub_category"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/smp_tvShopSubCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="idnm"
+                    android:textSize="@dimen/content_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/shop_child_category"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/smp_tvShopChildCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="-"
+                    android:textSize="@dimen/content_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/shop_delivery"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/smp_tvShopDelivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="No"
+                        android:textSize="@dimen/content_text_size"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/payment_method"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/smp_tvPaymentMethod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="Credit Card Only"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/number_of_branches"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="normal" />
+                    <TextView
+                        android:id="@+id/smp_tvNumberOfBranch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="101"
+                        android:textSize="@dimen/content_text_size"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/smp_tvContactDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/btn_round_shap_primery_color"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/contact_details"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:background="@drawable/cream_back_roun_rect"
+                android:id="@+id/smp_llContactDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/address"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/smp_tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="-----"
+                    android:textSize="@dimen/content_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/street_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/smp_tvStreetName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="Shyamal Cross Road , Jodhpur"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/city"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/smp_tvCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="Ahmedabad"
+                        android:textSize="@dimen/content_text_size"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/country"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/smp_tvCountry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="India"
+                        android:textSize="@dimen/content_text_size"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/darker_gray"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/state"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/smp_tvState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:textSize="@dimen/content_text_size"
+                        android:text="Gujarat"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/darker_gray"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/district"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/smp_tvDistrict"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="Dst"
+                        android:textSize="@dimen/content_text_size"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/zip_code"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/smp_tvZipCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:textSize="@dimen/content_text_size"
+                        android:text="380061"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/darker_gray"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/mobile_no"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/smp_tvMobileNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:textSize="@dimen/content_text_size"
+                        android:text="937788400"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/darker_gray"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/phone_no"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/smp_tvPhoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:textSize="@dimen/content_text_size"
+                        android:text="8898543150"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/darker_gray"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/website"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/smp_tvWebsite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:textSize="@dimen/content_text_size"
+                        android:text="http://www.website.com"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/darker_gray"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/smp_tvShopTiming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/btn_round_shap_primery_color"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/shop_timing"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <androidx.gridlayout.widget.GridLayout
+                android:visibility="gone"
+                android:background="@drawable/gray_back_roun_rect_shop_time"
+                android:id="@+id/smp_glShopTiming"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="4dp"
+                app:alignmentMode="alignMargins"
+                android:horizontalSpacing="0.5dp"
+                android:verticalSpacing="0.5dp"
+                app:columnCount="3"
+                app:rowOrderPreserved="false"
+                app:useDefaultMargins="false">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time_left_top"
+                    android:layout_height="match_parent"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:text="" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    app:layout_rowWeight="1"
+                    android:textSize="12sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:text="@string/open_time" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time_right_top"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal"
+                    android:textSize="11sp"
+                    android:text="@string/close_time" />
+
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:text="@string/mon" />
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:id="@+id/smp_tvMonStart"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="open" />
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:id="@+id/smp_tvMonEnd"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="00:00" />
+
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:text="@string/tues" />
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:id="@+id/smp_tvTueStart"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Open 24" />
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:id="@+id/smp_tvTueEnd"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="02:00" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal"
+                    android:textColor="@android:color/black"
+                    android:text="@string/wed" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:id="@+id/smp_tvWedStart"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Open 24 Hours" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:id="@+id/smp_tvWedEnd"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="07:00" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:text="@string/thus" />
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:id="@+id/smp_tvThuStart"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Open 24" />
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:id="@+id/smp_tvThuEnd"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Open 24" />
+
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:text="@string/fri" />
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:id="@+id/smp_tvFriStart"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Open 24" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:id="@+id/smp_tvFriEnd"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:text="@string/sat" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:id="@+id/smp_tvSatStart"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Open 24" />
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:id="@+id/smp_tvSatEnd"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Open 24" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time_left_bottom"
+                    android:textSize="12sp"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:text="@string/sun" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time"
+                    android:textSize="12sp"
+                    android:id="@+id/smp_tvSunStart"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Open 24" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cream_back_roun_rect_shop_time_right_bottom"
+                    android:textSize="12sp"
+                    android:id="@+id/smp_tvSunEnd"
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Open" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <TextView
+                android:id="@+id/smp_tvTermsAndCondtions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/btn_round_shap_primery_color"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/terms_and_conditions"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/smp_tvTerms"
+                android:visibility="gone"
+                android:textColor="@android:color/black"
+                android:background="@drawable/cream_back_roun_rect"
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:lines="5"
+                android:textSize="@dimen/header_text_size"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center_vertical"
+                android:gravity="top"
+                android:hint="@string/shop_terms_and_conditions" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="48dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@android:color/darker_gray">
+
+                <ImageView
+                    android:id="@+id/smp_ivShopImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_placeholder" />
+
+                <TextView
+                    android:id="@+id/smp_tvHeaderShopName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Sales India - Navrangpura"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/header_text_size" />
+
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    android:layout_width="wrap_content"
+                    android:id="@+id/smp_rbShopMyProfile"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:isIndicator="true"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:progressTint="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    app:backgroundTint="@color/colorPrimary" />
+            </FrameLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvShopName"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:textSize="@dimen/content_text_size"
+        android:text="" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llTotal"
+        android:layout_below="@+id/tvShopName">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/llTotal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@+id/btnPlaceOrder"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvTotalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_amount"
+            android:textAppearance="@android:style/Widget.ActionBar.TabText"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sar"
+            android:textAppearance="@android:style/Widget.ActionBar.TabText"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/header_text_size" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPlaceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/teal_color"
+        android:text="@string/place_order"
+        android:textAppearance="@android:style/Widget.ActionBar.TabText"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/header_text_size" />
+
+</RelativeLayout>

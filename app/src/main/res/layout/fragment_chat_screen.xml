@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mahalati.mahalatibusiness.fragments.ChatScreenFragment">
+
+    <com.mahalati.mahalatibusiness.utils.SwipeRefreshLayoutWithEmpty
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_above="@+id/fch_rlBottom"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_chatscreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/llNodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_no_offer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/no_chat_yet"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+    </com.mahalati.mahalatibusiness.utils.SwipeRefreshLayoutWithEmpty>
+
+    <RelativeLayout
+        android:id="@+id/fch_rlBottom"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fch_llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/fcs_etMessage"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:textSize="@dimen/content_text_size"
+                    android:background="@drawable/round_edittext"
+                    android:hint="@string/type_msg_here"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/fcs_tvSend"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_round_shap_primery_color"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="@string/send"
+                    android:textSize="@dimen/header_text_size"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

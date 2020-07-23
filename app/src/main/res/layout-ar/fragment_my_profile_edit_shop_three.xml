@@ -1,0 +1,499 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".fragments.MyProfileEditShopFragment">
+
+        <Spinner
+            android:id="@+id/srts_spShoptype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_spinner_back"
+            android:entries="@array/shopClassification"
+            android:inputType="text"
+            android:lines="1"
+            android:padding="8dp" />
+
+        <Spinner
+            android:id="@+id/srts_spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_spinner_back"
+            android:entries="@array/selectCategory"
+            android:padding="8dp"
+            android:textColor="@color/login_text_color"
+            android:textColorHint="@color/login_text_color"
+            android:textSize="13sp" />
+
+
+        <Spinner
+            android:id="@+id/srts_spSubCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_spinner_back"
+            android:entries="@array/subCategory"
+            android:inputType="text"
+            android:lines="1"
+            android:padding="8dp"
+            android:textColor="@color/login_text_color"
+            android:textColorHint="@color/login_text_color"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/srts_spChildCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_spinner_back"
+            android:entries="@array/childCategory"
+            android:padding="8dp"
+            android:textColor="@color/login_text_color"
+            android:textColorHint="@color/login_text_color"
+            android:textSize="13sp" />
+
+
+        <Spinner
+            android:id="@+id/srts_spPaymentMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_spinner_back"
+            android:entries="@array/paymentMethod"
+            android:padding="8dp"
+            android:textColor="@color/login_text_color"
+            android:textColorHint="@color/login_text_color"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/srts_spShopDelivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_spinner_back"
+            android:entries="@array/shopDelivery"
+            android:padding="8dp"
+            android:textColor="@color/login_text_color"
+            android:textColorHint="@color/login_text_color"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:id="@+id/srts_etNumberOfBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right|center_vertical"
+            android:background="@drawable/round_edittext"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:entries="@array/shopDelivery"
+            android:hint="@string/number_of_branches"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/srts_tvMonday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:text="@string/mon_working_hours"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/srts_spMondayOpening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/workingTIme"
+                android:padding="8dp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/srts_spMondayColsing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/workingTImeClose"
+                android:padding="8dp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/srts_tvTuesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:text="@string/tues_working_hourse"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/srts_spTuesdayOpening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/workingTIme"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/srts_spTuesdayClosing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/workingTImeClose"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/srts_tvWednesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:text="@string/wedn_working_hours"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/srts_spWednesdayOpening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/workingTIme"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/srts_spWednesdayclosing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/workingTImeClose"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/srts_tvThursday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:text="@string/thus_working_hourse"
+            android:textColor="@color/black"
+            android:textColorHint="@color/login_text_color"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/srts_spThursdayOpening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/workingTIme"
+                android:padding="8dp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/srts_spThursdayClosing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/workingTImeClose"
+                android:padding="8dp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/srts_tvFriday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:text="@string/fri_working_hourse"
+            android:textColor="@color/black"
+            android:textColorHint="@color/login_text_color"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/srts_spFridayOpening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/workingTIme"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/srts_spFridayClosing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/workingTImeClose"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/srts_tvSaturday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:text="@string/sat_working_hourse"
+            android:textColor="@color/black"
+            android:textColorHint="@color/login_text_color"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/srts_spSaturdayOpening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/workingTIme"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/srts_spSaturdayClosing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/workingTImeClose"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/srts_tvSunday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:text="@string/sun_working_hourse"
+            android:textColor="@color/black"
+            android:textColorHint="@color/login_text_color"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/srts_spSundayOpening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/workingTIme"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/srts_spSundayClosing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/workingTImeClose"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/srts_btnBack"
+                android:layout_width="120dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_round_shap_primery_color"
+                android:text="@string/back"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/srts_btnSubmit"
+                android:layout_width="120dp"
+                android:layout_height="42dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_round_shap_primery_color"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>

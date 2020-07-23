@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlWishlists"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvWishList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/content_text_size"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="@string/wishlist" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvWishList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnClearAll"
+            android:layout_below="@+id/tvWishList">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btnClearAll"
+            android:layout_width="match_parent"
+            android:text="@string/clear_all"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/bid_order_shape_primery_color"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/wishlist"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_no_offer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/your_cart_is_empty_n_there_are_no_items_in_your_cart"
+            android:textAppearance="@android:style/Widget.ActionBar.TabText"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnContinueShopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_round_shape_red_color"
+            android:gravity="center_horizontal|center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/continue_shopping"
+            android:textAppearance="@android:style/Widget.ActionBar.TabText"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

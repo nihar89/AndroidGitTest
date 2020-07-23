@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddBranchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/abf_etShopName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_edittext"
+            android:hint="@string/shop_name"
+            android:maxLines="1"
+            android:lines="1"
+            android:gravity="right|center_vertical"
+            android:inputType="text"
+            android:ellipsize="end"
+            android:padding="10dp"
+            android:textSize="@dimen/content_text_size" />
+
+        <EditText
+            android:id="@+id/abf_etCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right|center_vertical"
+            android:background="@drawable/round_edittext"
+            android:hint="@string/shop_company_name"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/content_text_size" />
+
+        <EditText
+            android:id="@+id/abf_etManagerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="text"
+            android:gravity="right|center_vertical"
+            android:background="@drawable/round_edittext"
+            android:hint="@string/shop_manager_name"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/content_text_size" />
+
+        <EditText
+            android:id="@+id/abf_etMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:gravity="right|center_vertical"
+            android:background="@drawable/round_edittext"
+            android:hint="@string/shop_mobile_number"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/content_text_size" />
+
+        <EditText
+            android:id="@+id/abf_etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right|center_vertical"
+            android:background="@drawable/round_edittext"
+            android:hint="@string/phone_number"
+            android:padding="10dp"
+            android:inputType="number"
+            android:textSize="@dimen/content_text_size" />
+
+        <EditText
+            android:id="@+id/abf_etFax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right|center_vertical"
+            android:background="@drawable/round_edittext"
+            android:hint="@string/fax"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="@dimen/content_text_size" />
+
+        <Button
+            android:id="@+id/abf_btnSubmit"
+            android:layout_width="120dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_round_shap_primery_color"
+            android:text="@string/next"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>

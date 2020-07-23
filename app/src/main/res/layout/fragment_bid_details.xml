@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.BidDetailsFragment">
+
+    <ScrollView
+        android:id="@+id/activity_bid_details"
+        android:layout_above="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <androidx.cardview.widget.CardView
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/bd_ivBIdProduct"
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/image_placeholder" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Ttttt"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/header_text_size"
+                            android:id="@+id/bd_tvTitle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/electronics"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/content_text_size"
+                            android:id="@+id/bd_tvCategory" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/qty"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="@dimen/content_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="1"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="@dimen/content_text_size"
+                                android:id="@+id/bd_tvQty" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/price"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="@dimen/content_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="11500"
+                                android:id="@+id/bd_tvPrice"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="@dimen/content_text_size" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/total_amount"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/content_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvAmt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/sar"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/content_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--LL of Shop Informtion-->
+            <LinearLayout
+                android:id="@+id/fbd_llShopInfoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bid_order_shape_primery_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:text="@string/shop_information"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/header_text_size" />
+                <ImageView
+                    android:id="@+id/fbd_ivArrowShopInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.2"
+                    android:gravity="end"
+                    android:src="@drawable/top_arrow" />
+            </LinearLayout>
+
+            <!--Detail shop information-->
+            <LinearLayout
+                android:id="@+id/fbd_llShopInfo"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/bd_ivImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/image_placeholder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/shop_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvShopNm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="Sales India - Navrangpura"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/shop_company_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvCmpnyNm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="Sales India - Navrangpura"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/shop_manager_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvManagerNm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="test"
+                    android:textSize="@dimen/content_text_size"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/address"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Navrangpura"
+                    android:textSize="@dimen/content_text_size"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/email"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="test@test.com"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/licence_no"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvLicense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="Lice123"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/mobile_no"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="123467899"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/phone_no"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="123467899"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/fax"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvFax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="123467899"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/country"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="India"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/state"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="Gujarat"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/city"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="Ahmedabad"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/street_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvStreet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="Vishvas Nagar Extension"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/district"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvDistrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="new Delhi"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/zip_code"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvZipCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="385566"
+                    android:textSize="@dimen/content_text_size"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+            </LinearLayout>
+
+            <!-- LL of Bid information-->
+            <LinearLayout
+                android:id="@+id/fbd_llProductInfoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bid_order_shape_primery_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:text="@string/product_information"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/header_text_size" />
+
+                <ImageView
+                    android:id="@+id/fbd_ivArrowProdcutInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.2"
+                    android:gravity="end"
+                    android:src="@drawable/top_arrow" />
+
+            </LinearLayout>
+
+            <!--Deatils of Bid Information Selection-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/fbd_llProductInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/bd_tvProductImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/image_placeholder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/product_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvPName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="Product1en"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/barcode"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bd_tvBarCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="5"
+                        android:textSize="@dimen/content_text_size"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/product_category"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvPCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Electronics"
+                    android:textSize="@dimen/content_text_size"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/product_subcategory"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvPSubCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="Mobile English en"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/product_child_category"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvPChildCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="--"
+                    android:textSize="@dimen/content_text_size"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <!--Add Color View like color:skyBlue-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/color"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bd_tvPColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_blue_bright"
+                        android:padding="4dp"
+                        android:textSize="@dimen/content_text_size"
+                        android:textColor="@android:color/black" />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/price"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bd_tvFixedPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:textSize="@dimen/content_text_size"
+                        android:text="1100"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/expiry_date"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bd_tvPExpiry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:textSize="@dimen/content_text_size"
+                        android:text="2016-12-30 00:00:00"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/code"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bd_tvPCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="123"
+                        android:textSize="@dimen/content_text_size"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/agent"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bd_tvPAgent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="21"
+                        android:textSize="@dimen/content_text_size"
+                        android:textColor="@android:color/black" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/specification"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvPSpecification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="specifi"
+                    android:textSize="@dimen/content_text_size"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/quantity"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bd_tvPQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="500"
+                        android:textSize="@dimen/content_text_size"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/brand_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvBrand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="1"
+                    android:textSize="@dimen/content_text_size"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/guarantee_In_year"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bd_tvGuarantee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="1 "
+                        android:textSize="@dimen/content_text_size"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/discription"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvPDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:layout_gravity="top|start"
+                    android:maxLines="3"
+                    android:textSize="@dimen/content_text_size"
+                    android:gravity="center_vertical"
+                    android:text="descr"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+            </LinearLayout>
+
+
+            <!--LL of Customer Information-->
+            <LinearLayout
+                android:id="@+id/fbd_llCustomerInfoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bid_order_shape_primery_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:text="@string/customer_information"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/header_text_size" />
+
+                <ImageView
+                    android:id="@+id/fbd_ivArrowCustomerInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.2"
+                    android:gravity="end"
+                    android:src="@drawable/top_arrow" />
+            </LinearLayout>
+
+            <!--Details of Customer Imformation-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/fbd_llCustomerInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/customer_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvCName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Tanay"
+                    android:textSize="@dimen/content_text_size"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/email"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvCEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="test@test.com"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/contact_number"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvCContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="123456789"
+                    android:textSize="@dimen/content_text_size"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/fbd_llBidInfoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bid_order_shape_primery_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:text="@string/bid_information"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/header_text_size" />
+
+                <ImageView
+                    android:id="@+id/fbd_ivArrowBidInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.2"
+                    android:gravity="end"
+                    android:src="@drawable/top_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/bid_expiry_date"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvBidExpirydate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!--Details of Customer Imformation-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/fbd_llBidInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/Status"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/header_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bd_tvBidStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="Tanay"
+                        android:textSize="@dimen/content_text_size"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/bidding_date_time"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvBidDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="00:00:00"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/notes"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bd_tvBidNotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="ok"
+                    android:textSize="@dimen/content_text_size"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--main ll-->
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/bd_btnReject"
+            android:text="@string/reject"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/bd_btnAmend"
+            android:text="@string/amend"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:background="@color/amend_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/bd_btnAccept"
+            android:text="@string/accept"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

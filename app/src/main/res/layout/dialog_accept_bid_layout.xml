@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/dabl_lltop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_enter_phone_back"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/dabl_etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_edittext"
+            android:hint="@string/message"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:textSize="@dimen/header_text_size" />
+
+        <EditText
+            android:id="@+id/dabl_etDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_edittext"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/enter_date_time"
+            android:inputType="datetime"
+            android:padding="8dp"
+            android:textSize="@dimen/header_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dabl_lltop"
+        android:background="@drawable/ic_send_btn_back"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/dabl_tvDone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/done"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/dabl_tvCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/header_text_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>

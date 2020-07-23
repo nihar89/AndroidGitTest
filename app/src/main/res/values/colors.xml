@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f3268</color>
+    <color name="appRed">#BB0018</color>
+    <color name="appOffWhite">#FBFBFB</color>
+    <color name="colorPrimaryDark">#3f3268</color>
+    <color name="colorAccent">#3f3268</color>
+    <color name="lightest_gray">#EFEFEF</color>
+    <color name="app_green">#3f3268</color>
+    <color name="green">#177245</color>
+    <color name="picker_background">#ff7c7c7c</color>
+    <color name="section_top_color">#3f3268</color>
+
+
+    <color name="dialog_background">#DDFFFFFF</color>
+    <color name="gray">#55808080</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="login_text_color">#ced6c2</color>
+    <color name="gray_light">#DDDDDD</color>
+    <color name="light_black">#21000000</color>
+    <color name="hint_foreground_material_light">#ced6c2</color>
+    <color name="hint_foreground_material_dark">#ced6c2</color>
+    <color name="chat_right_side">#D1F1BF</color>
+    <color name="chat_left_side">#D6E7C5</color>
+    <color name="setting_back">#c6c4c4</color>
+
+    <color name="card_back">#EFEFF4</color>
+    <color name="product_detail_back">#D3CFC9</color>
+
+    <color name="text_tab_selected">#7A0E25</color>
+    <color name="text_tab_unselected">#FFFFFF</color>
+    <color name="amend_color">#e28812</color>
+    <color name="app_red">#AF1725</color>
+    <color name="purered">#F44336</color>
+    <color name="assign_to_shop">#FF6604</color>
+    <color name="blue">#0000FF</color>
+    <color name="color_cream">#f1f1f1</color>
+    <color name="actionbar_opacity">#33000000</color>
+    <color name="teal_color">#2ca0a0</color>
+    <color name="sky_color">#8DFFFF</color>
+    <color name="orange">#fe4f20</color>
+    <color name="gray_bg">#F4F5F9</color>
+
+    <integer-array name="rainbow">
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/white</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+    </integer-array>
+</resources>

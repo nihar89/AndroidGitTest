@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dialog_enter_phone"
+    android:layout_width="230dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/dai_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16sp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dai_tvCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/camera"
+            android:textStyle="bold"
+            android:textSize="@dimen/header_text_size"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_round_shap_primery_color"/>
+
+        <TextView
+            android:id="@+id/dai_tvPhotoGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/photo_gallery"
+            android:textStyle="bold"
+            android:textSize="@dimen/header_text_size"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_round_shap_primery_color"/>
+
+        <View
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/dai_ll"
+        android:id="@+id/dai_tvClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="@dimen/header_text_size"
+        android:text="@string/close"
+        android:background="@drawable/ic_send_btn_back"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+</RelativeLayout>

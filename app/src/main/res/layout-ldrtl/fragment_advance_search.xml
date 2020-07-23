@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_advance_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AdvanceSearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/asa_spType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_spinner_back"
+            android:entries="@array/searchTypeArr"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/fas_etSearchItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_edittext"
+            android:gravity="right"
+            android:hint="@string/item_name"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textSize="@dimen/header_text_size" />
+
+        <Spinner
+            android:id="@+id/asa_spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_spinner_back"
+            android:entries="@array/categoryArr"
+            android:padding="4dp" />
+
+        <Spinner
+            android:id="@+id/asa_etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_spinner_back"
+            android:entries="@array/advanceCityName"
+            android:padding="4dp" />
+
+        <LinearLayout
+            android:id="@+id/fas_llItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="4dp"
+                android:text="@string/Status"
+                android:textColor="@color/appOffWhite"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/fas_rgStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/fa_rbNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radiobutton_drawable"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/new_text"
+                    android:textSize="@dimen/content_text_size"
+                    app:buttonTint="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/fa_rbUsed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radiobutton_drawable"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/used"
+                    android:textSize="@dimen/content_text_size"
+                    app:buttonTint="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/fa_rbAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radiobutton_drawable"
+                    android:checked="true"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:text="@string/all"
+                    android:textSize="@dimen/content_text_size" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/fas_etBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_edittext"
+                android:gravity="right"
+                android:hint="@string/brand"
+                android:padding="8dp"
+                android:textSize="@dimen/header_text_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:padding="4dp"
+                android:text="@string/price"
+                android:textColor="@color/appOffWhite"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/fas_cbFixed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_drawable"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/fixed"
+                    android:textSize="@dimen/header_text_size" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/fas_cbBid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_drawable"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/bid"
+                    android:textSize="@dimen/header_text_size" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:padding="4dp"
+                android:text="@string/discount_Offer"
+                android:textColor="@color/appOffWhite"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/fas_cbOffer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_drawable"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/offer"
+                    android:textSize="@dimen/content_text_size" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/fas_cbDiscount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_drawable"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/discount_"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fas_btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_round_shap_primery_color"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

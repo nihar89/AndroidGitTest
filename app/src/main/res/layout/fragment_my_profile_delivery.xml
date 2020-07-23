@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_delivery_profile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.DeliveryShipmentEditFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <RadioGroup
+            android:id="@+id/fpd_rgDeliveryType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:foregroundTint="@color/colorPrimary">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                app:buttonTint="@color/colorPrimary"
+                android:checked="true"
+                android:text="@string/private_text"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                android:id="@+id/fpd_rbPrivate" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                app:buttonTint="@color/colorPrimary"
+                android:text="@string/company"
+                android:textSize="15sp"
+                android:id="@+id/fpd_rbCompany"
+                android:shadowDx="-2"
+                android:shadowDy="-2" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/fpd_etName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_profile_text_back"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:textColorHint="@android:color/black"
+            android:textSize="15sp"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/fpd_etDeliveryCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/ic_profile_text_back"
+            android:hint="@string/Companyname"
+            android:lines="1"
+            android:inputType="text"
+            android:textColorHint="@android:color/black"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/fpd_etIdNumber"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/ic_profile_text_back"
+            android:hint="@string/id_number"
+            android:inputType="number"
+            android:maxLength="15"
+            android:paddingLeft="10dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/fpd_etMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/ic_profile_text_back"
+            android:hint="Mobile Number"
+            android:maxLength="15"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/fpd_etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:visibility="invisible"
+            android:paddingLeft="10dp"
+            android:background="@drawable/ic_profile_text_back"
+            android:maxLength="18"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:textColorHint="@android:color/black"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/fpd_tvNext"
+            android:layout_marginTop="8dp"
+            android:layout_width="120dp"
+            android:layout_height="42dp"
+            android:background="@drawable/btn_round_shap_primery_color"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:shadowRadius="6"
+            android:text="@string/submit"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/header_text_size" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

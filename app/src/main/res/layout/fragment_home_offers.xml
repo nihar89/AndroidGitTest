@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mahalati.mahalatibusiness.utils.SwipeRefreshLayoutWithEmpty xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fho_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fho_rvList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <FrameLayout
+            android:id="@+id/llNoData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/ic_no_offer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/there_are_no_offers"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/there_are_no_offers_details"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/fho_btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_round_shap_primery_color"
+                android:gravity="center_horizontal|center"
+                android:text="@string/continue_shopping"
+                android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/header_text_size" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+</com.mahalati.mahalatibusiness.utils.SwipeRefreshLayoutWithEmpty>

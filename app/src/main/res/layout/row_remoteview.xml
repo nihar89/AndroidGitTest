@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/row_chat_relative_image"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/row_chat_relative_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/row_chat_relative_image"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/row_chat_textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/row_chat_textview_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_chat_textview_title"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:text="@string/app_name"
+            android:textSize="@dimen/_10sdp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

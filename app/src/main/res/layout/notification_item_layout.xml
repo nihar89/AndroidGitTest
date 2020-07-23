@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/white"
+    android:id="@+id/nil_cvMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/nil_tvNotification"
+    android:padding="8dp"
+    android:textSize="@dimen/header_text_size"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</androidx.cardview.widget.CardView>

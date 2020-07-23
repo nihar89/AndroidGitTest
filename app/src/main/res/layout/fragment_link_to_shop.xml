@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical"
+    tools:context=".fragments.AddOfferFragment">
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/header_text_size"
+        android:gravity="center"
+        android:text="@string/link_to_shop_will_add_shop_to_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/aof_spfirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="end"
+        android:background="@drawable/edit_spinner_back"
+        android:entries="@array/shopArr"
+        android:padding="8dp"
+        android:textSize="@dimen/content_text_size" />
+
+    <Spinner
+        android:id="@+id/aof_spSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_spinner_back"
+        android:entries="@array/shopArr"
+        android:padding="8dp"
+        android:textSize="@dimen/content_text_size" />
+
+    <Button
+        android:id="@+id/aof_btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/header_text_size"
+        android:background="@drawable/btn_round_shap_primery_color"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>
+

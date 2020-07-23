@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/rlLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlDrawer"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ib_drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_drawer" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlBack"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="16dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ib_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_back_arrow"
+                android:rotation="180" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/rlLeft"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/header_text_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/llRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivFilter"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/if_filter_new" />
+
+        <RelativeLayout
+            android:id="@+id/rlWishList"
+            android:layout_width="38dp"
+            android:layout_height="45dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivWishList"
+                android:layout_width="38dp"
+                android:layout_height="37dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:src="@drawable/wishlist_white" />
+
+            <TextView
+                android:id="@+id/tvBadgeWishList"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/badge_black"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/onlineimage"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            android:src="@drawable/online"
+            android:tag="on" />
+
+        <RelativeLayout
+            android:layout_width="38dp"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/ivNotification"
+                android:layout_width="38dp"
+                android:layout_height="37dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:src="@drawable/notification_white" />
+
+            <TextView
+                android:id="@+id/tvBadgeNotification"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/badge_black"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="38dp"
+            android:layout_height="37dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/search_white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlRoadPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/ivRoadPlanp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="@string/track_order"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivRoadPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_road_planner"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCart"
+        android:layout_width="42dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/drawer_cart_white" />
+
+        <TextView
+            android:id="@+id/tvBadgeCart"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/badge_black"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

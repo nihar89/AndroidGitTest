@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="@color/black"
+        android:text="@string/shop_rating"
+        android:textSize="@dimen/header_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/shopRating"
+        android:layout_gravity="center"
+        android:rating="0.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvDeliveryRate"
+        android:textColor="@color/black"
+        android:text="@string/delivery_rating"
+        android:textSize="@dimen/header_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/deliveryRating"
+        android:layout_gravity="center"
+        android:rating="0.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:text="@string/shop_review"
+        android:textSize="@dimen/header_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etShopReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="top|right"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_edittext"
+        android:hint="@string/shop_review"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:maxLines="3"
+        android:padding="10dp"
+        android:textSize="@dimen/content_text_size" />
+
+
+    <TextView
+        android:id="@+id/tvDeliveryReview"
+        android:textColor="@color/black"
+        android:text="@string/delivery_review"
+        android:textSize="@dimen/header_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etDeliveryReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="top|right"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_edittext"
+        android:hint="@string/delivery_review"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:maxLines="3"
+        android:padding="10dp"
+        android:textSize="@dimen/content_text_size" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_round_shap_primery_color"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/header_text_size"
+        android:textStyle="bold" />
+
+</LinearLayout>

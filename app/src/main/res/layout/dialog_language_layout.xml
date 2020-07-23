@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/activity_dialog_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:id="@+id/dll_lltop"
+            android:background="@drawable/ic_enter_phone_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/change_language"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/restart_app"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+            <RadioGroup
+                android:id="@+id/dll_rgMain"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/dll_rbEnglish"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radiobutton_drawable"
+                    android:paddingStart="5dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="@string/english" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/dll_rbArabic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radiobutton_drawable"
+                    android:paddingStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:text="@string/arabic" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/dll_lltop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/dll_tvSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/set"
+                android:textSize="@dimen/header_text_size"
+                android:background="@drawable/bid_order_shape_primery_color"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/dll_tvCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/cancle"
+                android:textSize="@dimen/header_text_size"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+

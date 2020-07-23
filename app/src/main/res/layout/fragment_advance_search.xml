@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_advance_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AdvanceSearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <Spinner
+                android:id="@+id/asa_spType"
+                android:padding="8dp"
+                android:background="@drawable/edit_spinner_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:entries="@array/searchTypeArr" />
+
+            <EditText
+                android:id="@+id/fas_etSearchItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_edittext"
+                android:inputType="text"
+                android:hint="@string/shop_name"
+                android:textSize="@dimen/header_text_size"
+                android:padding="8dp" />
+
+            <Spinner
+                android:id="@+id/asa_spCategory"
+                android:padding="8dp"
+                android:background="@drawable/edit_spinner_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:entries="@array/categoryArr" />
+
+            <Spinner
+                android:id="@+id/asa_etCity"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_spinner_back"
+                android:entries="@array/advanceCityName" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/fas_llItem"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:background="@color/gray_bg"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:text="@string/product_condition"
+                android:textSize="@dimen/header_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_product_condition"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"/>
+            
+            <RadioGroup
+                android:layout_marginTop="3dp"
+                android:id="@+id/fas_rgStatus"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/fa_rbNew"
+                    android:text="@string/new_text"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:buttonTint="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/content_text_size"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:button="@drawable/radiobutton_drawable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/fa_rbUsed"
+                    android:text="@string/used"
+                    android:layout_marginLeft="5dp"
+                    app:buttonTint="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/content_text_size"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:button="@drawable/radiobutton_drawable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/fa_rbAll"
+                    android:text="@string/all"
+                    android:layout_marginLeft="5dp"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:button="@drawable/radiobutton_drawable"
+                    android:textSize="@dimen/content_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:background="@color/gray_bg"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:text="@string/brand"
+                android:textSize="@dimen/header_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_brand"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/fas_etBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_edittext"
+                android:hint="@string/brand_name"
+                android:textSize="@dimen/header_text_size"
+                android:padding="8dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/gray_bg"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:text="@string/price"
+                android:textSize="@dimen/header_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_price"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/fas_cbFixed"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:button="@drawable/checkbox_drawable"
+                    android:text="@string/fixed"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/fas_cbBid"
+                    android:layout_weight="1"
+                    android:text="@string/bid"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/header_text_size"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:button="@drawable/checkbox_drawable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/gray_bg"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:text="@string/discount_Offer"
+                android:textSize="@dimen/header_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/fas_cbOffer"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/offer"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:button="@drawable/checkbox_drawable"
+                    android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/fas_cbDiscount"
+                    android:layout_weight="1"
+                    android:text="@string/discount_"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="@dimen/content_text_size"
+                    android:button="@drawable/checkbox_drawable"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/fas_btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/btn_round_shap_primery_color"
+            android:text="@string/submit"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

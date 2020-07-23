@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/dabl_lltop"
+        android:background="@drawable/ic_enter_phone_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/content_text_size"
+            android:text="@string/enter_your_shipment_charges"
+            android:padding="8dp" />
+        <EditText
+            android:id="@+id/daos_etDeliveryCharges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="datetime"
+            android:focusable="false"
+            android:gravity="right"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/round_edittext"
+            android:hint="@string/delivery_charges"
+            android:textSize="@dimen/header_text_size"
+            android:padding="8dp" />
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/dabl_lltop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_send_btn_back"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/daos_tvOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textSize="@dimen/header_text_size"
+            android:text="@string/ok"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/daos_tvCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="@string/cancle"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</RelativeLayout>

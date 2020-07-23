@@ -1,0 +1,351 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fss_rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.AddProductFragment">
+
+    <RelativeLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/app_green">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/delivery_registration"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_green">
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teal_color"
+            android:text="@string/have_an_account"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlBottom"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/llTop"
+        android:background="@drawable/sign_up_bg"
+        android:isScrollContainer="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fap_llAddPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#21000000"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/fsr_ivShipment"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_add_product_photo"
+                    app:riv_border_color="#21000000"
+                    app:riv_border_width="1dip"
+                    app:riv_corner_radius="8dip"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false"
+                    app:riv_tile_mode="clamp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/add_your_photo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/user_type"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/fsr_rgUsertype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/fsr_rbPrivate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radiobutton_drawable"
+                    android:checked="true"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:text="@string/private_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/header_text_size" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/fsr_rbCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radiobutton_drawable"
+                    android:checked="false"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:text="@string/company"
+                    android:textAppearance="@android:style/Widget.ActionBar.TabText"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/header_text_size" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/fsr_etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                android:gravity="right|center_vertical"
+                android:hint="@string/namelayout"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/fsr_etCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                android:gravity="right|center_vertical"
+                android:hint="@string/company"
+                android:inputType="textCapWords"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/fsr_etPlateNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                android:gravity="right|center_vertical"
+                android:hint="@string/id_number"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/fsr_etEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                android:gravity="right|center_vertical"
+                android:hint="@string/email"
+                android:inputType="textWebEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                android:paddingLeft="8dp">
+
+                <EditText
+                    android:id="@+id/fsr_etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/fls_ivPassShowHide"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/hide_pass" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                android:paddingLeft="8dp">
+
+                <EditText
+                    android:id="@+id/fsr_etConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:padding="10dp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/fls_ivCPassShowHide"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/hide_pass" />
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/fsr_etMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                android:gravity="right|center_vertical"
+                android:hint="@string/mobile_no"
+                android:inputType="number"
+                android:digits="@string/input_key_phone_number"
+                android:maxLength="15"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/fsr_etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:imeOptions="actionDone"
+                android:layout_marginLeft="10dp"
+                android:maxLength="15"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible"
+                android:background="@drawable/drawable_rectangle_round_edge_trans_color_white_border"
+                android:gravity="right|center_vertical"
+                android:hint="@string/phone_number"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/fsr_btnSubmit"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/drawable_rectangle_round_edge_black_trans_color_white_border"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
