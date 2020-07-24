@@ -20,7 +20,7 @@ public class ExampleInstrumentedTest {
     public void useAppContext() throws Exception {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
-
+//2nd commit
         assertEquals("com.mahalati.mahalati", appContext.getPackageName());
     }
 }
