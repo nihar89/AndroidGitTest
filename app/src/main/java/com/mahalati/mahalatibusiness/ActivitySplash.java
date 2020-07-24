@@ -28,6 +28,7 @@ public class ActivitySplash extends AppCompatActivity {
         textViewToken = (TextView) findViewById(R.id.tokenversion);
 
         //token
+        // 2nd token
         FirebaseInstanceId.getInstance().getInstanceId()
                 .addOnSuccessListener(new OnSuccessListener<InstanceIdResult>() {
                     @Override
